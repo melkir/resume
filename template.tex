@@ -1,0 +1,126 @@
+%% start of file `template.tex'.
+
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+\usepackage[default]{opensans}
+\usepackage{xcolor}
+
+\usepackage{multirow, makecell}
+
+\definecolor{dodgerblue}{RGB}{0, 174, 172}
+\definecolor{dartmouthgreen}{RGB}{142, 192, 62}
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% command for include skype icon
+\makeatletter
+\newcommand*{\skypesocialsymbol}{\includegraphics[height=.7\baselineskip]{assets/skype_gray.png}}
+\collectionadd[skype]{socials}{ [[.basics.skype]]}
+\makeatother
+
+% character encoding
+\usepackage[utf8]{inputenc}                        % if you are not using xelatex ou lualatex, replace by the encoding you are using
+
+% adjust the page margins
+\usepackage{geometry}\geometry{top=18mm, bottom=18mm, left=20mm, right=20mm}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% adjust the item list padding
+\usepackage{enumitem}
+\setlist[itemize]{parsep=0pt, leftmargin=12pt}
+
+% personal data [[with .basics]]
+\name{[[.firstname]]}{[[.lastname]]}
+\address{[[.location.address]]}{[[.location.postalCode]] [[.location.city]]}{[[.location.country]]} % optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+
+\phone[mobile]{[[.phone]]}                  % optional, remove / comment the line if not wanted
+\email{[[.email]]}                          % optional, remove / comment the line if not wanted
+%\homepage{[[.website]]}                    % optional, remove / comment the line if not wanted
+% [[end]]
+
+%\extrainfo{Put some extra info here}              % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                      % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                % optional, remove / comment the line if not wanted
+
+
+%---------------------------------------------------------------------------
+%            content
+%---------------------------------------------------------------------------
+\begin{document}
+%-----       resume       --------------------------------------------------
+\makecvtitle
+
+% \small{[[.basics.summary]]}
+\vspace*{-8mm}
+\section{\textsc{[[.section.employment]]}}
+\vspace{3pt}
+{
+  \setlength{\tabcolsep}{6pt}
+  \begin{tabular}{r|p{14cm}}
+    % [[ range $j, $work := .work]][[ if $j ]]
+    \multicolumn{2}{c}{}                                                                                                                   \\
+    % [[ end ]]
+    \multirow{2}{2.3cm}{\raggedleft \textsc{\textcolor{dartmouthgreen}{[[.startDate | month]]-[[.endDate | month]] [[.startDate | year]]}} \\ \textcolor{dartmouthgreen}{[[.duration]]}}
+     & \textbf{\textcolor{dodgerblue}{[[.company]], [[.city]]}} \textcolor{dartmouthgreen}{>} \textcolor{dodgerblue}{[[.position]]}        \\
+     & \small{[[.summary]]}                                                                                                                \\
+     & \footnotesize{[[range $i, $hl:= .highlights]]
+      [[if $i]]\newline [[end]][[$hl]].[[end]]
+    }                                                                                                                                      \\
+    % [[ end ]]
+  \end{tabular}
+}
+
+\vspace*{-3mm}
+\section{\textsc{[[.section.education]]}}
+\vspace{6pt}
+{
+  \setlength{\tabcolsep}{8pt}
+  \begin{tabular}{rl}
+    % [[ range $i, $education := .education]][[ if $i ]]
+    \\&\\
+    % [[ end ]]
+    \textcolor{dartmouthgreen}{[[.startDate | year]] - [[.endDate | year]]}
+     & \textbf{\textcolor{dodgerblue}{[[.degree]] [[.domain]]}}
+    \textcolor{dartmouthgreen}{>} {\textcolor{dodgerblue}{[[.institution]]}} \\
+     & [[.domain]], [[.major]]
+    % [[ end ]]
+  \end{tabular}
+}
+
+\section{\textsc{[[.section.technical]]}}
+\vspace{-2pt}
+\subsection{[[.subsection.projects]]}
+\vspace{3pt}
+\begin{itemize}
+  [[ range .projects ]]
+  \item{\textbf{\textcolor{dodgerblue}{[[.name]]}} \textcolor{dartmouthgreen}{([[.year]])} [[.summary]]}.
+        \\ [[.description]].
+        [[ end ]]
+\end{itemize}
+
+\subsection{[[.subsection.certifications]]}
+\vspace{3pt}
+\begin{itemize}
+  [[ range .certifications ]]
+  \item{\textbf{\textcolor{dodgerblue}{[[.name]]}} \textcolor{dartmouthgreen}{([[.year]])}}\\[[.description]].
+        [[ end ]]
+\end{itemize}
+
+\section{\textsc{[[.section.technologies]]}}
+\begin{itemize}[[with .technologies]]
+  \item \textbf{\textcolor{dodgerblue}{Languages: }} [[.languages | toList]]
+  \item \textbf{\textcolor{dodgerblue}{Frameworks: }} [[.frameworks | toList]]
+  \item \textbf{\textcolor{dodgerblue}{Database: }} [[.databases | toList]]
+  \item \textbf{\textcolor{dodgerblue}{Tools: }} [[.tools | toList]]
+\end{itemize}[[end]]
+%-----       letter       -------------------------------------------------------
+
+\end{document}
+
+%% end of file `template.tex'.

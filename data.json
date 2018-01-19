@@ -1,0 +1,199 @@
+{
+  "basics": {
+    "firstname": "Thibault",
+    "lastname": "Vieux",
+    "label": "",
+    "picture": "",
+    "email": "mail[at]thibaultvieux.com",
+    "phone": "(033) 688 XXXXXX",
+    "website": "https://thibaultvieux.com",
+    "skype": "malukiz13",
+    "github": "https://github.com/melkir",
+    "summary": "A summary of John Doe...",
+    "location": {
+      "address": "[private]",
+      "postalCode": "[private]",
+      "city": "[private]",
+      "country": "France"
+    }
+  },
+  "work": [
+    {
+      "company": "Heek",
+      "country": "France",
+      "city": "Paris",
+      "position": "Full-stack Developer",
+      "website": "https://www.heek.com",
+      "startDate": "2017-04-17",
+      "endDate": "2017-10-17",
+      "duration": "6 months",
+      "summary": "Website building chatbot powered by AI",
+      "highlights": [
+        "Reduced time to render the Heek editor by 80\\% (5s -> 1s) by using server-side rendering",
+        "Improved the productivity of the marketing team by designing a web framework to fit their needs",
+        "Identified and fixed several critical bugs on the server-side using debugging tools",
+        "Learned to work in a team using agile methods"
+      ]
+    },
+    {
+      "company": "Export Japan",
+      "country": "Japan",
+      "city": "Osaka",
+      "position": "Mobile App Developer",
+      "website": "https://www.export-japan.co.jp",
+      "startDate": "2016-05-23",
+      "endDate": "2016-09-23",
+      "duration": "4 months",
+      "summary": "Translate signs and printed material into multiple languages",
+      "highlights": [
+        "Implemented a BaaS server allowing user's multi-account management compatible with multiple providers",
+        "Builded an hybrid mobile app capable of taking advantages of the smartphone hardware capabilities such as the GPS, the NFC and the vibrations for visually impaired people",
+        "Managed interoperability between databases to extend the capabilities of the QR Translator service"
+      ]
+    },
+    {
+      "company": "La Française des Jeux",
+      "country": "France",
+      "city": "Vitrolles",
+      "position": "Web Developer",
+      "website": "https://www.fdj.fr",
+      "startDate": "2013-04-15",
+      "endDate": "2013-06-21",
+      "duration": "2 months",
+      "summary": "System Engineering, Middleware",
+      "highlights": [
+        "Design and implementation of a modern intranet site to present the ISM team within the company",
+        "Implemented a blog application with rights management, file upload and a real-time commenting system",
+        "Contributed to open-source side projects during the learning process"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "EISTI Engineering school",
+      "website": "https://eisti.fr/en",
+      "degree": "M.S.E",
+      "domain": "Computer and Information Science",
+      "major": "Smart systems. TOEIC: 795",
+      "startDate": "2015-01-01",
+      "endDate": "2017-01-01"
+    },
+    {
+      "institution": "Paris-Descartes University",
+      "website": "http://www.mi.parisdescartes.fr",
+      "degree": "B.S.E",
+      "domain": "Computer Science Engineering",
+      "major": "Artificial Intelligence",
+      "startDate": "2013-01-01",
+      "endDate": "2015-01-01"
+    },
+    {
+      "institution": "IUT Aix-Marseille",
+      "website": "https://iut.univ-amu.fr",
+      "degree": "DUT",
+      "domain": "Computer Science",
+      "major": "Software Engineering",
+      "startDate": "2011-01-01",
+      "endDate": "2013-01-01"
+    }
+  ],
+  "projects": [
+    {
+      "name": "API Libraries Demo",
+      "languages": [
+        "Java",
+        "XML"
+      ],
+      "frameworks": [
+        "Android"
+      ],
+      "year": "2017",
+      "summary": "Set of examples to illustrate android third party libraries",
+      "description": "Open-source android application which includes and illustrate pre-compiled examples of third-party libraries such as Android Vision"
+    },
+    {
+      "name": "Smart Waste Management prototype",
+      "languages": [
+        "C++",
+        "Arduino",
+        "Typescript"
+      ],
+      "frameworks": [
+        "Firebase",
+        "Angular",
+        "NodeJS"
+      ],
+      "year": "2017",
+      "summary": "Improve the waste collection services in cities",
+      "description": "Arduino board with ultrasonic sensors and wifi module to monitor the filling rate of containers, in real time and remotely, in order to optimize waste services"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Angular Fundamentals \\& Pro",
+      "year": "2017",
+      "description": "Successfully completed the online training courses on Ultimate Angular with the instructor Todd Motto"
+    }
+  ],
+  "technologies": {
+    "languages": [
+      "Java",
+      "C++",
+      "Typescript",
+      "HTML",
+      "CSS",
+      "Javascript",
+      "Arduino",
+      "SQL"
+    ],
+    "frameworks": [
+      "Angular",
+      "Sass",
+      "Express",
+      "Hapi",
+      "Ionic",
+      "Android"
+    ],
+    "databases": [
+      "MongoDB",
+      "Firebase",
+      "PostgreSQL"
+    ],
+    "tools": [
+      "Git",
+      "Jetbrains IDEs",
+      "Visual Studio",
+      "Chrome DevTools",
+      "Jira",
+      "Dapulse"
+    ]
+  },
+  "references": [
+    {
+      "name": "API Libraries Demo",
+      "reference": "https://github.com/melkir/API-Libraries-Demo"
+    },
+    {
+      "name": "Smart Waste Management research article (FR)",
+      "reference": "https://drive.google.com/open?id=1UVzieVcdrgVPI06xjXt1yzRnRIy-iqLZ"
+    },
+    {
+      "name": "QR Translator Internship Report",
+      "reference": "https://drive.google.com/open?id=1hjk6ulPl4ZMg_GmjfLAXiJZoDc4vZFFL"
+    },
+    {
+      "name": "QR Translator Backend server",
+      "reference": "https://www.gitbook.com/book/melkir/qrt-backend"
+    }
+  ],
+  "section": {
+    "employment": "Employment",
+    "education": "Education",
+    "technical": "Technical experience",
+    "technologies": "Languages and Technologies"
+  },
+  "subsection": {
+    "projects": "Projects",
+    "certifications": "Certifications"
+  }
+}
