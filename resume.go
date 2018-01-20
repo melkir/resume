@@ -2,7 +2,6 @@ package main
 
 import (
 	"encoding/json"
-	"fmt"
 	"io/ioutil"
 	"log"
 	"os"
@@ -75,5 +74,9 @@ func formatAsDate(date string, format string) string {
 }
 
 func formatArrayAsList(elements []interface{}) string {
-	return strings.Trim(strings.Replace(fmt.Sprint(elements), " ", ", ", -1), "[]") + "."
+	list := make([]string, len(elements))
+	for i, v := range elements {
+		list[i] = v.(string)
+	}
+	return strings.Join(list, ", ") + "."
 }
