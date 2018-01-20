@@ -126,6 +126,19 @@
       "year": "2017",
       "summary": "Improve the waste collection services in cities",
       "description": "Arduino board with ultrasonic sensors and wifi module to monitor the filling rate of containers, in real time and remotely, in order to optimize waste services"
+    },
+    {
+      "name": "SMS Push (2017)",
+      "languages": [
+        "Typescript",
+        "Java"
+      ],
+      "frameworks": [
+        "Android"
+      ],
+      "year": "2017",
+      "summary": "Send and receive SMS from your computer",
+      "description": "Turn your Android smartphone into a SMS gateway using Firebase Cloud Messaging (FCM) events"
     }
   ],
   "certifications": [
