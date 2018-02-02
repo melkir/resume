@@ -4,16 +4,16 @@
     "lastname": "Vieux",
     "label": "",
     "picture": "",
-    "email": "mail[at]thibaultvieux.com",
-    "phone": "(033) 688 XXXXXX",
     "website": "https://thibaultvieux.com",
     "skype": "malukiz13",
     "github": "https://github.com/melkir",
-    "summary": "A summary of John Doe...",
+    "summary": "Curious, open-minded, no-ego doers, good team-player",
+    "email": "mail@thibaultvieux.com",
+    "phone": "[phone]",
     "location": {
-      "address": "[private]",
-      "postalCode": "[private]",
-      "city": "[private]",
+      "address": "[addr]",
+      "postalCode": "[postal]",
+      "city": "[city]",
       "country": "France"
     }
   },
@@ -22,7 +22,7 @@
       "company": "Heek",
       "country": "France",
       "city": "Paris",
-      "position": "Full-stack Developer",
+      "position": "Full-stack Developer - Internship",
       "website": "https://www.heek.com",
       "startDate": "2017-04-17",
       "endDate": "2017-10-17",
@@ -30,7 +30,7 @@
       "summary": "Website building chatbot powered by AI",
       "highlights": [
         "Reduced time to render the Heek editor by 80\\% (5s -> 1s) by using server-side rendering",
-        "Improved the productivity of the marketing team by designing a web framework to fit their needs",
+        "Improved the productivity of the marketing team by designing a web framework to meet their needs",
         "Identified and fixed several critical bugs on the server-side using debugging tools",
         "Learned to work in a team using agile methods"
       ]
@@ -39,7 +39,7 @@
       "company": "Export Japan",
       "country": "Japan",
       "city": "Osaka",
-      "position": "Mobile App Developer",
+      "position": "Mobile App Developer - Internship",
       "website": "https://www.export-japan.co.jp",
       "startDate": "2016-05-23",
       "endDate": "2016-09-23",
@@ -47,7 +47,7 @@
       "summary": "Translate signs and printed material into multiple languages",
       "highlights": [
         "Implemented a BaaS server allowing user's multi-account management compatible with multiple providers",
-        "Builded an hybrid mobile app capable of taking advantages of the smartphone hardware capabilities such as the GPS, the NFC and the vibrations for visually impaired people",
+        "Built a hybrid mobile app capable of taking advantage of the smartphone hardware capabilities such as GPS, NFC and vibrations for visually impaired people",
         "Managed interoperability between databases to extend the capabilities of the QR Translator service"
       ]
     },
@@ -55,14 +55,14 @@
       "company": "La Française des Jeux",
       "country": "France",
       "city": "Vitrolles",
-      "position": "Web Developer",
+      "position": "Web Developer - Internship",
       "website": "https://www.fdj.fr",
       "startDate": "2013-04-15",
       "endDate": "2013-06-21",
       "duration": "2 months",
-      "summary": "System Engineering, Middleware",
+      "summary": "System Engineering, Middleware (SEM)",
       "highlights": [
-        "Design and implementation of a modern intranet site to present the ISM team within the company",
+        "Designed and implemented a modern intranet site to present the SEM team within the company",
         "Implemented a blog application with rights management, file upload and a real-time commenting system",
         "Contributed to open-source side projects during the learning process"
       ]
@@ -72,7 +72,7 @@
     {
       "institution": "EISTI Engineering school",
       "website": "https://eisti.fr/en",
-      "degree": "M.S.E",
+      "degree": "M.S.E. in",
       "domain": "Computer and Information Science",
       "major": "Smart systems. TOEIC: 795",
       "startDate": "2015-01-01",
@@ -81,7 +81,7 @@
     {
       "institution": "Paris-Descartes University",
       "website": "http://www.mi.parisdescartes.fr",
-      "degree": "B.S.E",
+      "degree": "B.S.E. in",
       "domain": "Computer Science Engineering",
       "major": "Artificial Intelligence",
       "startDate": "2013-01-01",
@@ -90,7 +90,7 @@
     {
       "institution": "IUT Aix-Marseille",
       "website": "https://iut.univ-amu.fr",
-      "degree": "DUT",
+      "degree": "Associate Degree in",
       "domain": "Computer Science",
       "major": "Software Engineering",
       "startDate": "2011-01-01",
@@ -108,8 +108,8 @@
         "Android"
       ],
       "year": "2017",
-      "summary": "Set of examples to illustrate android third party libraries",
-      "description": "Open-source android application which includes and illustrate pre-compiled examples of third-party libraries such as Android Vision"
+      "summary": "Set of examples to illustrates android third party libraries",
+      "description": "Open-source android application which includes and illustrates pre-compiled examples of third-party libraries such as Android Vision"
     },
     {
       "name": "Smart Waste Management prototype",
@@ -125,7 +125,7 @@
       ],
       "year": "2017",
       "summary": "Improve the waste collection services in cities",
-      "description": "Arduino board with ultrasonic sensors and wifi module to monitor the filling rate of containers, in real time and remotely, in order to optimize waste services"
+      "description": "Arduino board with ultrasonic sensors and wifi module to monitor the filling rate of containers, in real time and remotely, in order to optimize waste collection services"
     },
     {
       "name": "SMS Push (2017)",
@@ -138,7 +138,7 @@
       ],
       "year": "2017",
       "summary": "Send and receive SMS from your computer",
-      "description": "Turn your Android smartphone into a SMS gateway using Firebase Cloud Messaging (FCM) events"
+      "description": "Turn Android smartphone into an SMS gateway using Firebase Cloud Messaging (FCM) events"
     }
   ],
   "certifications": [
@@ -200,13 +200,13 @@
     }
   ],
   "section": {
-    "employment": "Employment",
+    "employment": "Work experience in IT",
     "education": "Education",
     "technical": "Technical experience",
     "technologies": "Languages and Technologies"
   },
   "subsection": {
-    "projects": "Projects",
+    "projects": "Personal projects",
     "certifications": "Certifications"
   }
 }
