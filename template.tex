@@ -43,10 +43,9 @@
 \email{[[.email]]}                          % optional, remove / comment the line if not wanted
 %\homepage{[[.website]]}                    % optional, remove / comment the line if not wanted
 % [[end]]
-
-%\extrainfo{Put some extra info here}              % optional, remove / comment the line if not wanted
-%\photo[64pt][0.4pt]{picture}                      % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
-%\quote{Some quote}                                % optional, remove / comment the line if not wanted
+%\extrainfo{Put some extra info here}       % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}               % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                         % optional, remove / comment the line if not wanted
 
 
 %---------------------------------------------------------------------------
@@ -56,8 +55,11 @@
 %-----       resume       --------------------------------------------------
 \makecvtitle
 
-% \small{[[.basics.summary]]}
-\vspace*{-8mm}
+\begin{picture}(0,0)
+\put(0,35){\includegraphics[width=64pt]{assets/profile}}
+\end{picture}
+
+\vspace*{-12mm}
 \section{\textsc{[[.section.employment]]}}
 \vspace{3pt}
 {

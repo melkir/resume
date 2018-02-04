@@ -90,7 +90,7 @@
     {
       "institution": "IUT Aix-Marseille",
       "website": "https://iut.univ-amu.fr",
-      "degree": "Associate Degree in",
+      "degree": "Associate's Degree in",
       "domain": "Computer Science",
       "major": "Software Engineering",
       "startDate": "2011-01-01",
@@ -108,7 +108,7 @@
         "Android"
       ],
       "year": "2017",
-      "summary": "Set of examples to illustrates android third party libraries",
+      "summary": "Set of examples to illustrate android third party libraries",
       "description": "Open-source android application which includes and illustrates pre-compiled examples of third-party libraries such as Android Vision"
     },
     {
@@ -128,7 +128,7 @@
       "description": "Arduino board with ultrasonic sensors and wifi module to monitor the filling rate of containers, in real time and remotely, in order to optimize waste collection services"
     },
     {
-      "name": "SMS Push (2017)",
+      "name": "SMS Push",
       "languages": [
         "Typescript",
         "Java"
