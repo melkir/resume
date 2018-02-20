@@ -1,5 +1,3 @@
-out/**/*.aux
-out/**/*.log
-out/**/*.out
-out/*.tex
+out
+!out/*.pdf
 resume
