@@ -2,6 +2,8 @@ package main
 
 import (
 	"encoding/json"
+	"flag"
+	"fmt"
 	"io/ioutil"
 	"log"
 	"os"
@@ -21,8 +23,11 @@ func main() {
 		"toList": formatArrayAsList,
 	}
 
-	const jsonFile = "data.json"
-	jsondata, err := ioutil.ReadFile(jsonFile)
+	lang := flag.String("lang", "en", "language can be either fr or en")
+	flag.Parse()
+
+	dataFile := fmt.Sprintf("data/%s.json", *lang)
+	jsonData, err := ioutil.ReadFile(dataFile)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -34,12 +39,13 @@ func main() {
 	}
 
 	resume := JSON{}
-	if err := json.Unmarshal(jsondata, &resume); err != nil {
+	if err := json.Unmarshal(jsonData, &resume); err != nil {
 		panic(err)
 	}
 
-	if _, err := os.Stat("out"); os.IsNotExist(err) {
-		os.Mkdir("out", 0755)
+	outputDir := fmt.Sprintf("out/%s", *lang)
+	if _, err := os.Stat(outputDir); os.IsNotExist(err) {
+		os.MkdirAll(outputDir, 0755)
 	}
 
 	file, err := os.Create("out/resume.tex")
@@ -52,7 +58,9 @@ func main() {
 		panic(err)
 	}
 
-	if err := exec.Command("pdflatex", "-output-directory", "out", "out/resume.tex").Run(); err != nil {
+	currentTime := time.Now().Local().Format("02Jan2006")
+	name := fmt.Sprintf("resume_%s_%s", *lang, currentTime)
+	if err := exec.Command("pdflatex", "-output-directory", outputDir, "-jobname", name, "out/resume.tex").Run(); err != nil {
 		log.Fatal("Cannot create pdf", err)
 	}
 }

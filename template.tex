@@ -4,6 +4,7 @@
 
 \usepackage[default]{opensans}
 \usepackage{xcolor}
+\usepackage[utf8]{inputenc}
 
 \usepackage{multirow, makecell}
 
@@ -90,7 +91,7 @@
     \textcolor{dartmouthgreen}{[[.startDate | year]] - [[.endDate | year]]}
      & \textbf{\textcolor{dodgerblue}{[[.degree]] [[.domain]]}}
     \textcolor{dartmouthgreen}{>} {\textcolor{dodgerblue}{[[.institution]]}} \\
-     & [[.domain]], [[.major]]
+     & [[.major]]
     % [[ end ]]
   \end{tabular}
 }
@@ -116,10 +117,10 @@
 
 \section{\textsc{[[.section.technologies]]}}
 \begin{itemize}[[with .technologies]]
-  \item \textbf{\textcolor{dodgerblue}{Languages: }} [[.languages | toList]]
-  \item \textbf{\textcolor{dodgerblue}{Frameworks: }} [[.frameworks | toList]]
-  \item \textbf{\textcolor{dodgerblue}{Database: }} [[.databases | toList]]
-  \item \textbf{\textcolor{dodgerblue}{Tools: }} [[.tools | toList]]
+  \item \textbf{\textcolor{dodgerblue}{[[.title.languages]]: }} [[.languages | toList]]
+  \item \textbf{\textcolor{dodgerblue}{[[.title.frameworks]]: }} [[.frameworks | toList]]
+  \item \textbf{\textcolor{dodgerblue}{[[.title.database]]: }} [[.databases | toList]]
+  \item \textbf{\textcolor{dodgerblue}{[[.title.tools]]: }} [[.tools | toList]]
 \end{itemize}[[end]]
 %-----       letter       -------------------------------------------------------
 

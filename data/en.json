@@ -9,10 +9,10 @@
     "github": "https://github.com/melkir",
     "summary": "Curious, open-minded, no-ego doers, good team-player",
     "email": "mail@thibaultvieux.com",
-    "phone": "[phone]",
+    "phone": "(033) 688 XXXXXX",
     "location": {
       "address": "[addr]",
-      "postalCode": "[postal]",
+      "postalCode": "[zip]",
       "city": "[city]",
       "country": "France"
     }
@@ -109,7 +109,7 @@
       ],
       "year": "2017",
       "summary": "Set of examples to illustrate android third party libraries",
-      "description": "Open-source android application which includes and illustrates pre-compiled examples of third-party libraries such as Android Vision"
+      "description": "Open-source android application which includes and illustrates pre-compiled examples of third-party libraries such as Mobile Vision"
     },
     {
       "name": "Smart Waste Management prototype",
@@ -149,6 +149,12 @@
     }
   ],
   "technologies": {
+    "title": {
+      "languages": "Languages",
+      "frameworks": "Frameworks",
+      "database": "Database",
+      "tools": "Tools"
+    },
     "languages": [
       "Java",
       "C++",

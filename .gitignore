@@ -1,0 +1,5 @@
+out/**/*.aux
+out/**/*.log
+out/**/*.out
+out/*.tex
+resume

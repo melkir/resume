@@ -1,0 +1,218 @@
+{
+  "basics": {
+    "firstname": "Thibault",
+    "lastname": "Vieux",
+    "label": "",
+    "picture": "",
+    "website": "https://thibaultvieux.com",
+    "skype": "malukiz13",
+    "github": "https://github.com/melkir",
+    "summary": "Curieux, ouvert d'esprit, bon team-player",
+    "email": "mail@thibaultvieux.com",
+    "phone": "0688XXXXXX",
+    "location": {
+      "address": "[addr]",
+      "postalCode": "[zip]",
+      "city": "[city]",
+      "country": "France"
+    }
+  },
+  "work": [
+    {
+      "company": "Heek",
+      "country": "France",
+      "city": "Paris",
+      "position": "Développeur Full-stack - Stage",
+      "website": "https://www.heek.com",
+      "startDate": "2017-04-17",
+      "endDate": "2017-10-17",
+      "duration": "6 mois",
+      "summary": "Chatbot créateur de site internet",
+      "highlights": [
+        "Amélioration de la vitesse d'affichage de l'éditeur Heek de 80\\% grâce à un système de rendu côté serveur",
+        "Conception d'un framework web répondant aux besoins de l'équipe marketing",
+        "Identification et correction de bugs critiques sur la plateforme à l'aide des outils de débogages",
+        "Travail en équipe avec la méthode agile de gestion de projet SCRUM"
+      ]
+    },
+    {
+      "company": "Export Japan",
+      "country": "Japan",
+      "city": "Osaka",
+      "position": "Développeur d'application mobile - Stage",
+      "website": "https://www.export-japan.co.jp",
+      "startDate": "2016-05-23",
+      "endDate": "2016-09-23",
+      "duration": "4 mois",
+      "summary": "Transformer votre QR-code en contenu multi-langues",
+      "highlights": [
+        "Implémentation d'un serveur BaaS permettant la gestion et l'authentification multi-comptes",
+        "Création d'une application mobile hybride tirant profit des composants matériels du smartphone",
+        "Gestion de l'interopérabilité entre les bases de données pour étendre les capacités du service QR Translator"
+      ]
+    },
+    {
+      "company": "La Française des Jeux",
+      "country": "France",
+      "city": "Vitrolles",
+      "position": "Développeur Web - Stage",
+      "website": "https://www.fdj.fr",
+      "startDate": "2013-04-15",
+      "endDate": "2013-06-21",
+      "duration": "2 mois",
+      "summary": "Ingénierie, Système et Middleware (ISM)",
+      "highlights": [
+        "Conception et mise en place d'un site web intranet moderne pour présenter l'équipe ISM au sein de l'entreprise",
+        "Implémentation d'un blog incluant la gestion des droits par article, le téléchargement de fichiers ainsi qu'un module de commentaires en temps réel",
+        "Contribution à plusieurs projets open-source durant la phase d'apprentissage"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "EISTI Cergy",
+      "website": "https://eisti.fr",
+      "degree": "Ingénieur en",
+      "domain": "Informatique",
+      "major": "Option Smart Systems. TOEIC : 795",
+      "startDate": "2015-01-01",
+      "endDate": "2017-01-01"
+    },
+    {
+      "institution": "Université Paris-Descartes",
+      "website": "http://www.mi.parisdescartes.fr",
+      "degree": "Master en",
+      "domain": "Informatique",
+      "major": "Option Intelligence Artificielle",
+      "startDate": "2013-01-01",
+      "endDate": "2015-01-01"
+    },
+    {
+      "institution": "IUT Aix-Marseille",
+      "website": "https://iut.univ-amu.fr",
+      "degree": "DUT en ",
+      "domain": "Informatique",
+      "major": "Option Génie Logiciel",
+      "startDate": "2011-01-01",
+      "endDate": "2013-01-01"
+    }
+  ],
+  "projects": [
+    {
+      "name": "API Libraries Demo",
+      "languages": [
+        "Java",
+        "XML"
+      ],
+      "frameworks": [
+        "Android"
+      ],
+      "year": "2017",
+      "summary": "Ensemble d'exemples illustrants les bibliothèques tierces sur Android",
+      "description": "Conçu pour les développeurs et les concepteurs, l'application fournit des exemples d'utilisation des bibliothèques tierces sur Android tel que Mobile Vision, Google Maps et Firebase"
+    },
+    {
+      "name": "Smart Waste Management",
+      "languages": [
+        "C++",
+        "Arduino",
+        "Typescript"
+      ],
+      "frameworks": [
+        "Firebase",
+        "Angular",
+        "NodeJS"
+      ],
+      "year": "2017",
+      "summary": "L' IoT au service de la collecte intelligente des déchets dans les villes",
+      "description": "Prototype utilisant une carte Arduino équipée d'un capteur à ultrasons et d'un module WIFI afin de monitorer en temps réel et à distance le taux de remplissage des conteneurs"
+    },
+    {
+      "name": "SMS Push",
+      "languages": [
+        "Typescript",
+        "Java"
+      ],
+      "frameworks": [
+        "Android"
+      ],
+      "year": "2017",
+      "summary": "Envoyer et recevoir des SMS depuis votre ordinateur",
+      "description": "Transforme un smartphone Android en passerelle SMS grâce au service Firebase Cloud Messaging"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Angular Fundamentals \\& Pro, Ultimate Angular",
+      "year": "2017",
+      "description": "Formation en ligne présentant une utilisation avancée de Angular avec l'instructeur Todd Motto"
+    }
+  ],
+  "technologies": {
+    "title": {
+      "languages": "Langages ",
+      "frameworks": "Frameworks ",
+      "database": "Base de données ",
+      "tools": "Outils "
+    },
+    "languages": [
+      "Java",
+      "C++",
+      "Typescript",
+      "HTML",
+      "CSS",
+      "Javascript",
+      "Arduino",
+      "SQL"
+    ],
+    "frameworks": [
+      "Angular",
+      "Sass",
+      "Express",
+      "Hapi",
+      "Ionic",
+      "Android"
+    ],
+    "databases": [
+      "MongoDB",
+      "Firebase",
+      "PostgreSQL"
+    ],
+    "tools": [
+      "Git",
+      "Jetbrains IDEs",
+      "Visual Studio",
+      "Chrome DevTools",
+      "Jira",
+      "Dapulse"
+    ]
+  },
+  "references": [
+    {
+      "name": "API Libraries Demo",
+      "reference": "https://github.com/melkir/API-Libraries-Demo"
+    },
+    {
+      "name": "Smart Waste Management research article (FR)",
+      "reference": "https://drive.google.com/open?id=1UVzieVcdrgVPI06xjXt1yzRnRIy-iqLZ"
+    },
+    {
+      "name": "QR Translator Internship Report (EN)",
+      "reference": "https://drive.google.com/open?id=1hjk6ulPl4ZMg_GmjfLAXiJZoDc4vZFFL"
+    },
+    {
+      "name": "QR Translator Backend server",
+      "reference": "https://www.gitbook.com/book/melkir/qrt-backend"
+    }
+  ],
+  "section": {
+    "employment": "Expérience professionnelle en informatique",
+    "education": "Formation",
+    "technical": "Expérience technique",
+    "technologies": "Langages et Technologies"
+  },
+  "subsection": {
+    "projects": "Projets personnels",
+    "certifications": "Certifications"
+  }
+}
