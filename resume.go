@@ -61,7 +61,7 @@ func main() {
 	currentTime := time.Now().Local().Format("02Jan2006")
 	name := fmt.Sprintf("resume_%s_%s", *lang, currentTime)
 	if err := exec.Command("pdflatex", "-output-directory", outputDir, "-jobname", name, "out/resume.tex").Run(); err != nil {
-		log.Fatal("Cannot create pdf", err)
+		log.Fatal("Cannot create pdf")
 	}
 }
 
