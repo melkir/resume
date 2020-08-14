@@ -19,6 +19,22 @@
   },
   "work": [
     {
+      "company": "PayFit",
+      "country": "France",
+      "city": "Paris",
+      "position": "Full-stack Software Engineer",
+      "website": "https://payfit.com",
+      "startDate": "2018-03-18",
+      "endDate": "2020-08-10",
+      "duration": "2.5 years",
+      "summary": "Payroll and HR management software",
+      "highlights": [
+        "Back-office software architect",
+        "Training and practice of SRE skills",
+        "Active participation in the recruitment of team members"
+      ]
+    },
+    {
       "company": "Heek",
       "country": "France",
       "city": "Paris",
@@ -100,42 +116,24 @@
   "projects": [
     {
       "name": "API Libraries Demo",
-      "languages": [
-        "Java",
-        "XML"
-      ],
-      "frameworks": [
-        "Android"
-      ],
+      "languages": ["Java", "XML"],
+      "frameworks": ["Android"],
       "year": "2017",
       "summary": "Set of examples to illustrate android third party libraries",
       "description": "Open-source android application which includes and illustrates pre-compiled examples of third-party libraries such as Mobile Vision"
     },
     {
       "name": "Smart Waste Management prototype",
-      "languages": [
-        "C++",
-        "Arduino",
-        "Typescript"
-      ],
-      "frameworks": [
-        "Firebase",
-        "Angular",
-        "NodeJS"
-      ],
+      "languages": ["C++", "Arduino", "Typescript"],
+      "frameworks": ["Firebase", "Angular", "NodeJS"],
       "year": "2017",
       "summary": "Improve the waste collection services in cities",
       "description": "Arduino board with ultrasonic sensors and wifi module to monitor the filling rate of containers, in real time and remotely, in order to optimize waste collection services"
     },
     {
       "name": "SMS Push",
-      "languages": [
-        "Typescript",
-        "Java"
-      ],
-      "frameworks": [
-        "Android"
-      ],
+      "languages": ["Typescript", "Java"],
+      "frameworks": ["Android"],
       "year": "2017",
       "summary": "Send and receive SMS from your computer",
       "description": "Turn Android smartphone into an SMS gateway using Firebase Cloud Messaging (FCM) events"
@@ -155,37 +153,10 @@
       "database": "Database",
       "tools": "Tools"
     },
-    "languages": [
-      "Java",
-      "C++",
-      "Typescript",
-      "HTML",
-      "CSS",
-      "Javascript",
-      "Arduino",
-      "SQL"
-    ],
-    "frameworks": [
-      "Angular",
-      "Sass",
-      "Express",
-      "Hapi",
-      "Ionic",
-      "Android"
-    ],
-    "databases": [
-      "MongoDB",
-      "Firebase",
-      "PostgreSQL"
-    ],
-    "tools": [
-      "Git",
-      "Jetbrains IDEs",
-      "Visual Studio",
-      "Chrome DevTools",
-      "Jira",
-      "Dapulse"
-    ]
+    "languages": ["Typescript", "Dart", "C++", "Rust", "SQL"],
+    "frameworks": ["React", "Angular", "Flutter"],
+    "databases": ["MongoDB", "Redis", "Firebase", "PostgreSQL"],
+    "tools": ["Git", "CircleCI", "Jira", "Datadog", "Sentry", "ArgoCD"]
   },
   "references": [
     {

@@ -19,6 +19,22 @@
   },
   "work": [
     {
+      "company": "PayFit",
+      "country": "France",
+      "city": "Paris",
+      "position": "Ingénieur Full-stack",
+      "website": "https://payfit.com",
+      "startDate": "2018-03-18",
+      "endDate": "2020-08-10",
+      "duration": "2,5 ans",
+      "summary": "Logicial de gestion des salaires et ressources humaines",
+      "highlights": [
+        "Architecte logiciel sur le back-office",
+        "Formation et mise en pratique de compétences SRE",
+        "Participation active au recrutement des membres de l'équipe"
+      ]
+    },
+    {
       "company": "Heek",
       "country": "France",
       "city": "Paris",
@@ -100,42 +116,24 @@
   "projects": [
     {
       "name": "API Libraries Demo",
-      "languages": [
-        "Java",
-        "XML"
-      ],
-      "frameworks": [
-        "Android"
-      ],
+      "languages": ["Java", "XML"],
+      "frameworks": ["Android"],
       "year": "2017",
       "summary": "Ensemble d'exemples illustrants les bibliothèques tierces sur Android",
       "description": "Conçu pour les développeurs et les concepteurs, l'application fournit des exemples d'utilisation des bibliothèques tierces sur Android tel que Mobile Vision, Google Maps et Firebase"
     },
     {
       "name": "Smart Waste Management",
-      "languages": [
-        "C++",
-        "Arduino",
-        "Typescript"
-      ],
-      "frameworks": [
-        "Firebase",
-        "Angular",
-        "NodeJS"
-      ],
+      "languages": ["C++", "Arduino", "Typescript"],
+      "frameworks": ["Firebase", "Angular", "NodeJS"],
       "year": "2017",
       "summary": "L' IoT au service de la collecte intelligente des déchets dans les villes",
       "description": "Prototype utilisant une carte Arduino équipée d'un capteur à ultrasons et d'un module WIFI afin de monitorer en temps réel et à distance le taux de remplissage des conteneurs"
     },
     {
       "name": "SMS Push",
-      "languages": [
-        "Typescript",
-        "Java"
-      ],
-      "frameworks": [
-        "Android"
-      ],
+      "languages": ["Typescript", "Java"],
+      "frameworks": ["Android"],
       "year": "2017",
       "summary": "Envoyer et recevoir des SMS depuis votre ordinateur",
       "description": "Transforme un smartphone Android en passerelle SMS grâce au service Firebase Cloud Messaging"
@@ -155,37 +153,10 @@
       "database": "Base de données ",
       "tools": "Outils "
     },
-    "languages": [
-      "Java",
-      "C++",
-      "Typescript",
-      "HTML",
-      "CSS",
-      "Javascript",
-      "Arduino",
-      "SQL"
-    ],
-    "frameworks": [
-      "Angular",
-      "Sass",
-      "Express",
-      "Hapi",
-      "Ionic",
-      "Android"
-    ],
-    "databases": [
-      "MongoDB",
-      "Firebase",
-      "PostgreSQL"
-    ],
-    "tools": [
-      "Git",
-      "Jetbrains IDEs",
-      "Visual Studio",
-      "Chrome DevTools",
-      "Jira",
-      "Dapulse"
-    ]
+    "languages": ["Typescript", "Dart", "C++", "Rust", "SQL"],
+    "frameworks": ["React", "Angular", "Flutter"],
+    "databases": ["MongoDB", "Redis", "Firebase", "PostgreSQL"],
+    "tools": ["Git", "CircleCI", "Jira", "Datadog", "Sentry", "ArgoCD"]
   },
   "references": [
     {
