@@ -190,6 +190,7 @@ body {
 
   * {
     -webkit-print-color-adjust: exact;
+    -webkit-filter: opacity(1);
   }
 
   .main-page {
