@@ -1,0 +1,110 @@
+html {
+  font-family: "Inter var" !important
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+body {
+  width: 230mm;
+  height: 100%;
+  margin: 0 auto !important;
+  padding: 0;
+  background: rgb(204, 204, 204);
+}
+
+.main-page {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 10mm auto;
+  background: white;
+  box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+}
+
+.sub-page {
+  padding: 1cm;
+  height: 297mm;
+}
+
+.block-title {
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.block-section {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  border-radius: 0.75rem;
+  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.block-title {
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.item-section> :not([hidden])~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.user-photo {
+  --tw-border-opacity: 1;
+  border-color: rgba(255, 255, 255, var(--tw-border-opacity));
+  border-radius: 0.75rem;
+  border-width: 2px;
+  height: 5rem;
+  position: absolute;
+  top: -2.5rem;
+  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  width: 5rem;
+}
+
+/* Skill Block */
+
+.skill-tag {
+  --tw-bg-opacity: 1;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin: 0.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  --tw-text-opacity: 1;
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  html,
+  body {
+    width: 210mm;
+    height: 297mm;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact;
+  }
+
+  .main-page {
+    margin: 0;
+    border: initial;
+    border-radius: initial;
+    width: initial;
+    min-height: initial;
+    box-shadow: initial;
+    background: initial;
+    page-break-after: always;
+  }
+}
