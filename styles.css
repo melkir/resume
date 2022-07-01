@@ -1,5 +1,5 @@
 html {
-  font-family: "Inter var" !important
+  font-family: "Inter var" !important;
   font-feature-settings: "cv02", "cv03", "cv04", "cv11";
 }
 
@@ -22,13 +22,6 @@ body {
 .sub-page {
   padding: 1cm;
   height: 297mm;
-}
-
-.block-title {
-  font-weight: 600;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  margin-bottom: 1.25rem;
 }
 
 .block-section {
