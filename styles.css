@@ -112,23 +112,6 @@ body {
   width: 5rem;
 }
 
-.status-badge {
-  border-radius: 9999px;
-  font-weight: 600;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  padding-top: 0.125rem;
-  padding-bottom: 0.125rem;
-  position: absolute;
-  top: 1rem;
-  right: 1.75rem;
-  --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
-  text-transform: uppercase;
-}
-
 /* Skill Block */
 
 .skill-tag {
