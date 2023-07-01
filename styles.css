@@ -158,7 +158,6 @@ body {
   padding-bottom: 0.125rem;
   --tw-text-opacity: 1;
   color: rgba(139, 92, 246, var(--tw-text-opacity));
-  text-transform: capitalize;
 }
 
 @page {
