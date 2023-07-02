@@ -1,6 +1,7 @@
+/* Write your global styles here, in PostCSS syntax */
 html {
-  font-family: "Inter var" !important;
-  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  font-family: 'Inter var' !important;
+  font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
 }
 
 body {
@@ -29,8 +30,8 @@ body {
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
   border-radius: 0.75rem;
   --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),
+    var(--tw-shadow);
 }
 
 .block-title {
@@ -71,7 +72,7 @@ body {
 .item-header-info {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   font-weight: 500;
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -109,8 +110,8 @@ body {
   position: absolute;
   top: -2.5rem;
   --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),
+    var(--tw-shadow);
   width: 5rem;
 }
 
@@ -187,4 +188,12 @@ body {
     background: initial;
     page-break-after: always;
   }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-sm {
+  line-height: 1.2rem;
 }
