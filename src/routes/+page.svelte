@@ -90,7 +90,7 @@
       school: 'CY Tech',
       period: '2015 – 2017',
       location: 'Paris',
-      image: '/cytech.jpg'
+      image: 'cytech.jpg'
     },
     {
       title: 'B.E. in Computer Science',
@@ -98,7 +98,7 @@
       school: 'Univ. Paris Cité',
       period: '2013 – 2015',
       location: 'Paris',
-      image: '/paris_universite.jpg'
+      image: 'paris_universite.jpg'
     }
   ];
 </script>
@@ -109,9 +109,9 @@
       <!-- Start Left Side -->
       <div class="shadow rounded-xl overflow-hidden">
         <!-- Start User Block -->
-        <div class="h-24 bg-cover" style="background-image: url('/cover.jpg')" />
+        <div class="h-24 bg-cover" style="background-image: url('cover.jpg')" />
         <div class="pt-14 p-7 bg-white relative">
-          <img src="/avatar.jpg" alt="Avatar" class="user-photo" />
+          <img src="avatar.jpg" alt="Avatar" class="user-photo" />
           <div class="text-lg font-semibold mb-1.5">Thibault Vieux</div>
           <div class="text-sm text-gray-400 mb-1.5">Software Engineer</div>
           <ul class="flex space-x-4">
