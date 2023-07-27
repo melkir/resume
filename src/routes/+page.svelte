@@ -41,7 +41,7 @@
       title: 'Senior Software Engineer',
       company: 'Cryptio',
       location: 'Paris',
-      date: 'April 2023 - Present',
+      date: 'April - July 2023',
       type: 'Full-time',
       duration: '4 mos',
       description:
