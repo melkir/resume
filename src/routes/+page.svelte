@@ -132,7 +132,7 @@
         <div class="space-y-4">
           <div class="flex justify-between">
             <div class="text-gray-400">Location</div>
-            <div class="font-medium text-right text-gray-600">France</div>
+            <div class="font-medium text-right text-gray-600">Japan</div>
           </div>
           <div class="flex justify-between">
             <div class="text-gray-400">Experience</div>
