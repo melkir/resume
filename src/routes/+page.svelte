@@ -189,7 +189,7 @@
         <!-- Start About Me Block -->
         <h2 class="block-title">About me</h2>
         <p class="text-gray-600 text-sm">
-          I specialize in <b>building web applications</b> and currently simplify digital asset
+          I specialize in <b>building web applications</b> and simplified digital asset
           accounting at Cryptio. In my spare time, I program in Rust and work on home automation
           projects. I also taught <b>penetration testing</b> and
           <b>network security</b> at university, gaining valuable experience and feedback.
