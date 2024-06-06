@@ -44,8 +44,7 @@
       date: '2023年4月 - 7月',
       type: 'フルタイム',
       duration: '4か月',
-      description:
-        'デジタル資産データを会計、財務、および税務申告のための監査可能な記録に変換する。',
+      description: 'デジタル資産データの会計、財務、および税務申告の監査可能な記録への変換。',
       logo: CryptioLogo
     },
     {
@@ -75,8 +74,7 @@
       date: '2016年5月 - 9月',
       type: 'インターンシップ',
       duration: '6か月',
-      description:
-        'スマートフォンのハードウェア機能を活用できるハイブリッドモバイルアプリを構築しました。',
+      description: 'スマートフォンのハードウェア機能を活用できるハイブリッドモバイルアプリの構築。',
       logo: ExportJapanLogo
     }
   ];
@@ -137,7 +135,7 @@
             <div class="font-medium text-right text-gray-600">6年</div>
           </div>
           <div class="flex justify-between">
-            <div class="text-gray-400">利用可能期間</div>
+            <div class="text-gray-400">勤務開始日</div>
             <div class="font-medium text-right text-gray-600">1週間</div>
           </div>
           <div class="flex justify-between">
@@ -191,9 +189,10 @@
         <h2 class="block-title">自己紹介</h2>
         <p class="text-gray-600 text-sm">
           私はCryptioで<b>ウェブアプリケーションを構築</b
-          >し、簡素化されたデジタル資産会計を専門としています。余暇にはRustでプログラムを書いたり、ホームオートメーションプロジェクトに取り組んでいます。また、大学で
-          <b>ペネトレーションテスト</b>と<b>ネットワークセキュリティ</b
-          >を教えており、貴重な経験とフィードバックを得ています。
+          >し、省力化されたデジタル資産の会計処理を専門としております。
+          余暇活動として、Rustでプログラムを書いたり、ホームオートメーションプロジェクトに取り組んでいますまた、大学で<b
+            >ペネトレーションテスト</b
+          >と<b>ネットワークセキュリティ</b>を教えており、貴重な経験とフィードバックを得ております。
         </p>
       </div>
       <!-- End About Me Block -->
