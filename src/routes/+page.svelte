@@ -38,66 +38,62 @@
 
   const experience = [
     {
-      title: 'Senior Software Engineer',
+      title: 'シニアエンジニア',
       company: 'Cryptio',
-      location: 'Paris',
-      date: 'April - July 2023',
-      type: 'Full-time',
-      duration: '4 mos',
-      description:
-        'Transform digital asset data into auditable records for accounting, treasury, and tax fillings.',
+      location: 'パリ',
+      date: '2023年4月 - 7月',
+      type: 'フルタイム',
+      duration: '4か月',
+      description: 'デジタル資産データの会計、財務、および税務申告の監査可能な記録への変換。',
       logo: CryptioLogo
     },
     {
-      title: 'Fullstack Software Engineer',
+      title: 'フルスタックエンジニア',
       company: 'PayFit',
-      location: 'Paris',
-      date: 'Apr 2018 – Mar 2023',
-      type: 'Full-time',
-      duration: '5 yrs',
-      description:
-        "Development of the company's internal tools. Including the automation of recurring tasks with government authorities as well as the management of our clients data through intuitive dashboards.",
+      location: 'パリ',
+      date: '2018年4月 - 2023年3月',
+      type: 'フルタイム',
+      duration: '5年間',
+      description: '給与計算の自動化ソリューションの開発と保守。',
       logo: PayfitLogo
     },
     {
-      title: 'Fullstack Developer',
+      title: 'フルスタック開発者',
       company: 'Heek',
-      location: 'Paris',
-      date: 'Apr – Oct 2017',
-      type: 'Full-time',
-      duration: '6 mos',
-      description:
-        'Creation of an intelligent chatbot capable of generating websites according to customers needs.',
+      location: 'パリ',
+      date: '2017年4月 - 10月',
+      type: 'フルタイム',
+      duration: '6か月',
+      description: 'AIを使用したウェブサイトビルダーの開発。',
       logo: HeekLogo
     },
     {
-      title: 'Mobile Application Developer',
+      title: 'モバイル開発者',
       company: 'Export Japan',
-      location: 'Osaka',
-      date: 'May – Sep 2016',
-      type: 'Internship',
-      duration: '4 mos',
-      description:
-        'Built a hybrid mobile app capable of taking advantage of the smartphone hardware capabilities.',
+      location: '大阪',
+      date: '2016年5月 - 9月',
+      type: 'インターンシップ',
+      duration: '6か月',
+      description: 'スマートフォンのハードウェア機能を活用できるハイブリッドモバイルアプリの構築。',
       logo: ExportJapanLogo
     }
   ];
 
   const education = [
     {
-      title: 'Master in Computer Science',
-      domain: 'Smart Systems',
-      school: 'CY Tech',
+      title: 'コンピュータサイエンス修士',
+      domain: 'スマートシステム',
+      school: 'CYテック',
       period: '2015 – 2017',
-      location: 'Paris',
+      location: 'パリ',
       image: 'cytech.jpg'
     },
     {
-      title: 'B.E. in Computer Science',
-      domain: 'Artificial Intelligence',
-      school: 'Univ. Paris Cité',
+      title: 'コンピュータサイエンス学士',
+      domain: '人工知能',
+      school: 'パリ大学',
       period: '2013 – 2015',
-      location: 'Paris',
+      location: 'パリ',
       image: 'paris_universite.jpg'
     }
   ];
@@ -112,8 +108,8 @@
         <div class="h-24 bg-cover" style="background-image: url('cover.jpg')" />
         <div class="pt-14 p-7 bg-white relative">
           <img src="avatar.jpg" alt="Avatar" class="user-photo" />
-          <div class="text-lg font-semibold mb-1.5">Thibault Vieux</div>
-          <div class="text-sm text-gray-400 mb-1.5">Software Engineer</div>
+          <div class="text-lg font-semibold mb-1.5">ティボ・ビュー</div>
+          <div class="text-sm text-gray-400 mb-1.5">ソフトウェアエンジニア</div>
           <ul class="flex space-x-4">
             {#each socials as { href, icon }}
               <li>
@@ -128,32 +124,35 @@
       <!-- End User Block -->
       <div class="p-5 block-section">
         <!-- Start Info Block -->
-        <h2 class="block-title">Information</h2>
+        <h2 class="block-title">情報</h2>
         <div class="space-y-4">
           <div class="flex justify-between">
-            <div class="text-gray-400">Location</div>
-            <div class="font-medium text-right text-gray-600">Japan</div>
+            <div class="text-gray-400">場所</div>
+            <div class="font-medium text-right text-gray-600">日本</div>
           </div>
           <div class="flex justify-between">
-            <div class="text-gray-400">Experience</div>
-            <div class="font-medium text-right text-gray-600">6 years</div>
+            <div class="text-gray-400">経験</div>
+            <div class="font-medium text-right text-gray-600">6年</div>
           </div>
           <div class="flex justify-between">
-            <div class="text-gray-400">Available in</div>
-            <div class="font-medium text-right text-gray-600">1 week</div>
+            <div class="text-gray-400">勤務開始日</div>
+            <div class="font-medium text-right text-gray-600">1週間</div>
           </div>
           <div class="flex justify-between">
-            <div class="text-gray-400">Relocation</div>
-            <div class="font-medium text-right text-gray-600">Amenable</div>
+            <div class="text-gray-400">転居</div>
+            <div class="font-medium text-right text-gray-600">転居可能</div>
           </div>
           <div class="flex justify-between">
-            <div class="text-gray-400">Language</div>
+            <div class="text-gray-400">言語</div>
             <div class="flex content-center">
               <span class="bg-gray-100 text-gray-800 font-medium text-xs mr-1 px-1 py-1 rounded">
                 FR 🇫🇷
               </span>
-              <span class="bg-gray-100 text-gray-800 font-medium text-xs px-1 py-1 rounded">
+              <span class="bg-gray-100 text-gray-800 font-medium text-xs mr-1 px-1 py-1 rounded">
                 EN 🇬🇧
+              </span>
+              <span class="bg-gray-100 text-gray-800 font-medium text-xs px-1 py-1 rounded">
+                JP 🇯🇵
               </span>
             </div>
           </div>
@@ -162,7 +161,7 @@
       <!-- End Info Block -->
       <div class="p-5 block-section flow-root">
         <!-- Start Skills Block -->
-        <h2 class="block-title">Skills</h2>
+        <h2 class="block-title">スキル</h2>
         <div class="-m-2 flex flex-wrap">
           {#each skills as skill}
             <span class="skill-tag bg-purple-100 text-purple-800">{skill}</span>
@@ -172,7 +171,7 @@
       <!-- End Skills Block -->
       <div class="p-5 block-section flow-root">
         <!-- Start Projects Block -->
-        <h2 class="block-title">Key Projects</h2>
+        <h2 class="block-title">主要プロジェクト</h2>
         <div class="-m-2 flex flex-wrap">
           {#each projects as { href, name }}
             <a {href} target="_blank" class="skill-tag bg-blue-100 text-blue-800">{name}</a>
@@ -183,22 +182,23 @@
     </div>
     <!-- End Left Side -->
 
-    <div class="space-y-3 col-span-2">
+    <div class="space-y-4 col-span-2">
       <!-- Start Right Side -->
       <div class="p-5 block-section">
         <!-- Start About Me Block -->
-        <h2 class="block-title">About me</h2>
+        <h2 class="block-title">自己紹介</h2>
         <p class="text-gray-600 text-sm">
-          I specialize in <b>building web applications</b> and simplified digital asset
-          accounting at Cryptio. In my spare time, I program in Rust and work on home automation
-          projects. I also taught <b>penetration testing</b> and
-          <b>network security</b> at university, gaining valuable experience and feedback.
+          私はCryptioで<b>ウェブアプリケーションを構築</b
+          >し、省力化されたデジタル資産の会計処理を専門としております。
+          余暇活動として、Rustでプログラムを書いたり、ホームオートメーションプロジェクトに取り組んでいますまた、大学で<b
+            >ペネトレーションテスト</b
+          >と<b>ネットワークセキュリティ</b>を教えており、貴重な経験とフィードバックを得ております。
         </p>
       </div>
       <!-- End About Me Block -->
       <div class="p-5 block-section">
         <!-- Start Experience Block -->
-        <h2 class="block-title">Experience</h2>
+        <h2 class="block-title">経験</h2>
         {#each experience as { company, date, description, duration, location, logo, title, type }, i}
           <div class={i === experience.length - 1 ? 'item-section' : 'mb-4 item-section'}>
             <svelte:component this={logo} />
@@ -238,7 +238,7 @@
       <!-- End Experience Block -->
       <div class="p-5 block-section">
         <!-- Start Education Block -->
-        <h2 class="block-title">Education</h2>
+        <h2 class="block-title">アカデミー</h2>
         {#each education as { domain, image, location, period, school, title }, i}
           <div class={i === education.length - 1 ? 'item-section' : 'mb-4 item-section'}>
             <img alt="logo" class="rounded-md" src={image} height="48px" width="48px" />
