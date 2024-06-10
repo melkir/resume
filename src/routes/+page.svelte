@@ -103,7 +103,7 @@
   ];
 </script>
 
-<div class="flex items-center sub-page">
+<div class="flex items-center p-1cm">
   <div class="grid gap-4 grid-cols-3">
     <div class="space-y-4">
       <!-- Start Left Side -->
@@ -156,6 +156,10 @@
                 EN 🇬🇧
               </span>
             </div>
+          </div>
+          <div class="flex justify-between">
+            <div class="text-gray-400">Birthday</div>
+            <div class="font-medium text-right text-gray-600">1992/07/25</div>
           </div>
         </div>
       </div>

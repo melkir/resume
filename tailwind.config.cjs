@@ -2,7 +2,11 @@
 const config = {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
-    extend: {}
+    extend: {
+      spacing: {
+        '1cm': '1cm'
+      }
+    }
   },
 
   plugins: []
