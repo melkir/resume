@@ -144,33 +144,35 @@
         <h2 class="block-title">Information</h2>
         <div class="space-y-4">
           <div class="flex justify-between">
-            <div class="text-gray-400">Location</div>
+            <div class="text-gray-400">📍 Location</div>
             <div class="font-medium text-right text-gray-600">Japan</div>
           </div>
           <div class="flex justify-between">
-            <div class="text-gray-400">Experience</div>
+            <div class="text-gray-400">🛠️ Experience</div>
             <div class="font-medium text-right text-gray-600">6 years</div>
           </div>
           <div class="flex justify-between">
-            <div class="text-gray-400">Birthday</div>
+            <div class="text-gray-400">🍰 Birthday</div>
             <div class="font-medium text-right text-gray-600">1992/07/25</div>
           </div>
           <div class="flex justify-between">
-            <div class="text-gray-400">Available in</div>
+            <div class="text-gray-400">📅 Available in</div>
             <div class="font-medium text-right text-gray-600">1 week</div>
           </div>
           <div class="flex justify-between">
-            <div class="text-gray-400">Relocation</div>
+            <div class="text-gray-400">🏠 Relocation</div>
             <div class="font-medium text-right text-gray-600">Amenable</div>
           </div>
-          <div class="flex justify-between">
-            <div class="text-gray-400">Language</div>
+          <div class="flex flex-col justify-between">
             <div class="flex content-center">
               <span class="bg-gray-100 text-gray-800 font-medium text-xs mr-1 px-1 py-1 rounded">
-                FR 🇫🇷
+                🇫🇷 - FR Native
+              </span>
+              <span class="bg-gray-100 text-gray-800 font-medium text-xs mr-1 px-1 py-1 rounded">
+                🇬🇧 - EN C1
               </span>
               <span class="bg-gray-100 text-gray-800 font-medium text-xs px-1 py-1 rounded">
-                EN 🇬🇧
+                🇯🇵 - JP N4
               </span>
             </div>
           </div>
