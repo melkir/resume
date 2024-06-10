@@ -67,7 +67,7 @@
       type: 'Full-time',
       duration: '6 mos',
       description:
-        'Enhanced a chatbot capable of generating websites according to customer needs, which deepened my understanding of server-side rendering with Angular. This role also improved my skills in identifying and fixing critical bugs using debugging tools and provided valuable experience working in a team using agile methods.',
+        'I worked on a chatbot capable of generating websites according to customer needs. This role honed my skills in identifying and fixing critical bugs using debugging tools and provided valuable experience in team collaboration using agile methods. Additionally, it deepened my understanding of server-side rendering compared to client-side rendering.',
       logo: HeekLogo
     },
     {
