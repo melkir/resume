@@ -27,7 +27,18 @@
     }
   ];
 
-  const skills = ['Rust', 'TypeScript', 'React', 'GraphQL', 'Docker', 'SQL', 'Git', 'MongoDB'];
+  const skills = [
+    'TypeScript',
+    'Rust',
+    'React',
+    'Angular',
+    'MongoDB',
+    'SQL',
+    'Docker',
+    'GraphQL',
+    'Kubernetes',
+    'Git'
+  ];
 
   const projects = [
     { href: 'https://github.com/melkir/next-remote-gpio', name: 'Remote GPIO' },
@@ -56,7 +67,7 @@
       type: 'Full-time',
       duration: '5 yrs',
       description:
-        'Developed internal tools for the company, automating recurring tasks with government authorities and managing client data through intuitive dashboards. In the first three years at PayFit, I focused on frontend and backend development, designing dashboards and automating tasks. I have particularly enjoyed working on client-side fuzzy search using virtualization and implementing an event-driven change data capture system. Later, I joined the DevOps team to streamline deployments, improve scalability, monitor services, implement infrastructure as code and learned to manage Kubernetes clusters.',
+        'Developed internal tools for the company, automating recurring tasks with government authorities and managing client data through intuitive dashboards. In the first 3 years at PayFit, I focused on frontend and backend development, designing dashboards and automating tasks. Two notable projects I particularly enjoyed were the efficient display of large item lists using client-side fuzzy search with virtualization; the implementation of an event-driven change data capture system for real-time data synchronization between MongoDB and ElasticSearch. Later, I joined the DevOps team to streamline deployments, improve scalability, monitor services, implement infrastructure as code, and learn to manage Kubernetes clusters.',
       logo: PayfitLogo
     },
     {
@@ -90,6 +101,7 @@
       school: 'CY Tech',
       period: '2015 – 2017',
       location: 'Paris',
+      description: `As the valedictorian of my engineering school, I had the privilege of returning to teach penetration testing and network security after graduating. During my time at the school, I worked on embedded systems and authored a well-received scientific article on an intelligent waste collection system, which explored the integration of smart systems for smart city applications. My curriculum included a robust set of teaching units related to computer science, providing a strong foundation for my career.`,
       image: 'cytech.jpg'
     },
     {
@@ -98,6 +110,7 @@
       school: 'Univ. Paris Cité',
       period: '2013 – 2015',
       location: 'Paris',
+      description: `During my bachelor's studies, I focused on artificial intelligence and gained proficiency in programming languages such as Java and Python. My coursework included a comprehensive range of subjects, including algorithms, mathematics, and machine learning.`,
       image: 'paris_universite.jpg'
     }
   ];
@@ -139,6 +152,10 @@
             <div class="font-medium text-right text-gray-600">6 years</div>
           </div>
           <div class="flex justify-between">
+            <div class="text-gray-400">Birthday</div>
+            <div class="font-medium text-right text-gray-600">1992/07/25</div>
+          </div>
+          <div class="flex justify-between">
             <div class="text-gray-400">Available in</div>
             <div class="font-medium text-right text-gray-600">1 week</div>
           </div>
@@ -156,10 +173,6 @@
                 EN 🇬🇧
               </span>
             </div>
-          </div>
-          <div class="flex justify-between">
-            <div class="text-gray-400">Birthday</div>
-            <div class="font-medium text-right text-gray-600">1992/07/25</div>
           </div>
         </div>
       </div>
@@ -201,7 +214,7 @@
           <b>network security</b> at university, gaining valuable experience and feedback. Living in
           Osaka, since last September, I stay active with hip-hop classes, daily gym workouts, and weekly
           drumming sessions. I am also learning Japanese by participating in language exchange events
-          and previously attended a language school for four months.
+          and previously attended a language school for 4 months.
         </p>
       </div>
       <!-- End About Me Block -->
@@ -248,7 +261,7 @@
       <div class="p-5 block-section">
         <!-- Start Education Block -->
         <h2 class="block-title">Education</h2>
-        {#each education as { domain, image, location, period, school, title }, i}
+        {#each education as { description, domain, image, location, period, school, title }, i}
           <div class={i === education.length - 1 ? 'item-section' : 'mb-4 item-section'}>
             <img alt="logo" class="rounded-md" src={image} height="48px" width="48px" />
             <div class="w-full space-y-4">
@@ -274,6 +287,9 @@
                   </div>
                 </div>
               </div>
+              <p class="text-gray-600 text-sm" style="margin-top: 0.5rem">
+                {description}
+              </p>
               {#if i !== education.length - 1}
                 <div class="border-b border-gray-200" />
               {/if}
