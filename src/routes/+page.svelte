@@ -45,7 +45,7 @@
       type: 'Full-time',
       duration: '4 mos',
       description:
-        'At Cryptio, I led a team to transform digital asset data into auditable records for accounting, treasury, and tax filings, while enhancing my knowledge of relational databases and crypto asset accounting.',
+        'I led a team to transform digital asset data into auditable records for accounting, treasury, and tax filings, while enhancing my knowledge of relational databases and crypto asset accounting.',
       logo: CryptioLogo
     },
     {
@@ -56,7 +56,7 @@
       type: 'Full-time',
       duration: '5 yrs',
       description:
-        'Developed internal tools for the company, automating recurring tasks with government authorities and managing client data through intuitive dashboards. In the first three years at PayFit, I focused on frontend and backend development, designing dashboards and automating tasks. Particularly enjoyed working on client-side fuzzy search using virtualization and implementing an event-driven change data capture system. Later, I joined the DevOps team to streamline deployments, improve scalability, monitor services, implement infrastructure as code, and learned to manage Kubernetes clusters.',
+        'Developed internal tools for the company, automating recurring tasks with government authorities and managing client data through intuitive dashboards. In the first three years at PayFit, I focused on frontend and backend development, designing dashboards and automating tasks. I have particularly enjoyed working on client-side fuzzy search using virtualization and implementing an event-driven change data capture system. Later, I joined the DevOps team to streamline deployments, improve scalability, monitor services, implement infrastructure as code and learned to manage Kubernetes clusters.',
       logo: PayfitLogo
     },
     {
@@ -67,7 +67,7 @@
       type: 'Full-time',
       duration: '6 mos',
       description:
-        'Enhanced a chatbot at Heek capable of generating websites according to customer needs, which deepened my understanding of server-side rendering with Angular. This role also improved my skills in identifying and fixing critical bugs using debugging tools and provided valuable experience working in a team using agile methods.',
+        'Enhanced a chatbot capable of generating websites according to customer needs, which deepened my understanding of server-side rendering with Angular. This role also improved my skills in identifying and fixing critical bugs using debugging tools and provided valuable experience working in a team using agile methods.',
       logo: HeekLogo
     },
     {
