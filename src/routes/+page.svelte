@@ -45,7 +45,7 @@
       type: 'Full-time',
       duration: '4 mos',
       description:
-        'Transform digital asset data into auditable records for accounting, treasury, and tax fillings.',
+        'At Cryptio, I led a team to transform digital asset data into auditable records for accounting, treasury, and tax filings, while enhancing my knowledge of relational databases and crypto asset accounting.',
       logo: CryptioLogo
     },
     {
@@ -56,7 +56,7 @@
       type: 'Full-time',
       duration: '5 yrs',
       description:
-        "Development of the company's internal tools. Including the automation of recurring tasks with government authorities as well as the management of our clients data through intuitive dashboards.",
+        'Developed internal tools for the company, automating recurring tasks with government authorities and managing client data through intuitive dashboards. In the first three years at PayFit, I focused on frontend and backend development, designing dashboards and automating tasks. Particularly enjoyed working on client-side fuzzy search using virtualization and implementing an event-driven change data capture system. Later, I joined the DevOps team to streamline deployments, improve scalability, monitor services, implement infrastructure as code, and learned to manage Kubernetes clusters.',
       logo: PayfitLogo
     },
     {
@@ -67,7 +67,7 @@
       type: 'Full-time',
       duration: '6 mos',
       description:
-        'Creation of an intelligent chatbot capable of generating websites according to customers needs.',
+        'Enhanced a chatbot at Heek capable of generating websites according to customer needs, which deepened my understanding of server-side rendering with Angular. This role also improved my skills in identifying and fixing critical bugs using debugging tools and provided valuable experience working in a team using agile methods.',
       logo: HeekLogo
     },
     {
@@ -78,7 +78,7 @@
       type: 'Internship',
       duration: '4 mos',
       description:
-        'Built a hybrid mobile app capable of taking advantage of the smartphone hardware capabilities.',
+        'Implemented a BaaS server allowing multi-account management compatible with multiple providers and built a hybrid mobile app capable of utilizing smartphone hardware capabilities such as GPS, NFC, and vibrations.',
       logo: ExportJapanLogo
     }
   ];
@@ -189,10 +189,15 @@
         <!-- Start About Me Block -->
         <h2 class="block-title">About me</h2>
         <p class="text-gray-600 text-sm">
-          I specialize in <b>building web applications</b> and simplified digital asset
-          accounting at Cryptio. In my spare time, I program in Rust and work on home automation
-          projects. I also taught <b>penetration testing</b> and
-          <b>network security</b> at university, gaining valuable experience and feedback.
+          I specialize in <strong>building web applications</strong> from infrastructure deployment
+          to frontend design and backend optimization. In my spare time, I program in Rust and work
+          on home automation projects using my favorite web technologies. I also taught
+          <b>penetration testing</b>
+          and
+          <b>network security</b> at university, gaining valuable experience and feedback. Living in
+          Osaka, since last September, I stay active with hip-hop classes, daily gym workouts, and weekly
+          drumming sessions. I am also learning Japanese by participating in language exchange events
+          and previously attended a language school for four months.
         </p>
       </div>
       <!-- End About Me Block -->
