@@ -122,7 +122,7 @@
       <!-- Start Left Side -->
       <div class="shadow rounded-xl overflow-hidden">
         <!-- Start User Block -->
-        <div class="h-24 bg-cover" style="background-image: url('cover.jpg')" />
+        <div class="h-24 bg-cover" style="background-image: url('cover.jpg')"></div>
         <div class="pt-14 p-7 bg-white relative">
           <img src="avatar.jpg" alt="Avatar" class="user-photo" />
           <div class="text-lg font-semibold mb-1.5">Thibault Vieux</div>
@@ -131,7 +131,7 @@
             {#each socials as { href, icon }}
               <li>
                 <a {href} target="_blank" class="social-link-hover">
-                  <i class={`bx ${icon} text-xl`} />
+                  <i class={`bx ${icon} text-xl`}></i>
                 </a>
               </li>
             {/each}
@@ -224,8 +224,9 @@
         <!-- Start Experience Block -->
         <h2 class="block-title">Experience</h2>
         {#each experience as { company, date, description, duration, location, logo, title, type }, i}
+          {@const SvelteComponent = logo}
           <div class={i === experience.length - 1 ? 'item-section' : 'mb-4 item-section'}>
-            <svelte:component this={logo} />
+            <SvelteComponent />
             <div class="w-full space-y-4">
               <div class="item-header">
                 <div class="space-y-1.5">
@@ -253,7 +254,7 @@
                 {description}
               </p>
               {#if i !== experience.length - 1}
-                <div class="border-b border-gray-200" />
+                <div class="border-b border-gray-200"></div>
               {/if}
             </div>
           </div>
@@ -293,7 +294,7 @@
                 {description}
               </p>
               {#if i !== education.length - 1}
-                <div class="border-b border-gray-200" />
+                <div class="border-b border-gray-200"></div>
               {/if}
             </div>
           </div>
