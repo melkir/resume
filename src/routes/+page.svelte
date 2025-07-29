@@ -214,7 +214,7 @@
           <b>penetration testing</b>
           and
           <b>network security</b> at university, gaining valuable experience and feedback. Living in
-          Osaka, since last September, I stay active with hip-hop classes, daily gym workouts, and weekly
+          Osaka since 2023, I stay active with hip-hop classes, daily gym workouts, and weekly
           drumming sessions. I am also learning Japanese by participating in language exchange events
           and previously attended a language school for 4 months.
         </p>
