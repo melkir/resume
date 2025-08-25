@@ -79,7 +79,7 @@
       type: 'Full-time',
       duration: '5 yrs',
       description:
-        'Developed internal tools for the company, automating recurring tasks with government authorities and managing client data through intuitive dashboards. In the first 3 years at PayFit, I focused on frontend and backend development, designing dashboards and automating tasks. Two notable projects I particularly enjoyed were the efficient display of large item lists using client-side fuzzy search with virtualization; the implementation of an event-driven change data capture system for real-time data synchronization between MongoDB and ElasticSearch. Later, I joined the DevOps team to streamline deployments, improve scalability, monitor services, implement infrastructure as code, and learn to manage Kubernetes clusters.',
+        'Developed internal tools automating government tasks and client data management. Built dashboards, implemented fuzzy search with virtualization for large datasets, and created event-driven CDC for real-time MongoDB-ElasticSearch sync. Transitioned to DevOps to streamline deployments, manage Kubernetes clusters, and implement infrastructure as code.',
       logo: PayfitLogo
     },
     {
