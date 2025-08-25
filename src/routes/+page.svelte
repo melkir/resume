@@ -68,7 +68,6 @@
       url: 'https://github.com/melkir/android-sms-push'
     }
   ];
-
   const experience = [
     {
       title: 'Technical Consultant',
@@ -87,23 +86,30 @@
       location: 'Paris',
       period: 'April — July 2023',
       details: [
-        'Led the team for transforming digital asset data into auditable records using TypeScript, React, and NestJS',
-        'Enhanced PostgreSQL database performance for crypto asset accounting and treasury operations',
-        'Developed scalable Docker-containerized solutions for cryptocurrency transaction processing and tax filings'
+        'Led a backend team in transforming complex digital asset data into auditable financial records, architecting the solution with NestJS, React and TypeScript.',
+        'Optimized PostgreSQL database performance for high-volume crypto accounting, reducing query latency and improving data ingestion speeds.'
       ]
     },
     {
-      title: 'Fullstack Software Engineer',
       company: 'PayFit',
       location: 'Paris',
-      period: 'Apr 2018 — Mar 2023',
+      positions: [
+        {
+          title: 'DevOps Engineer',
+          period: 'Jan 2021 — Mar 2023'
+        },
+        {
+          title: 'Fullstack Software Engineer',
+          period: 'Apr 2018 — Dec 2020'
+        }
+      ],
       details: [
-        'Developed internal tools for automating government tasks and client data management',
-        'Built GraphQL dashboards with fuzzy search and virtualization for large JSON datasets',
-        'Created event-driven CDC for real-time MongoDB-ElasticSearch synchronization',
-        'Transitioned to DevOps team managing Kubernetes clusters and Docker containerization',
-        'Implemented infrastructure as code with Terraform, focusing on scalability and deployment automation',
-        'Reduced system downtime and enhanced platform reliability through monitoring and optimization with Datadog'
+        'Managed and scaled Kubernetes clusters, enhancing platform reliability and automating CI/CD pipelines for seamless deployments.',
+        'Implemented Infrastructure as Code (IaC) using Terraform, which automated environment provisioning and reduced manual configuration time by over 80%.',
+        'Improved system observability and reduced critical incident response time by leveraging advanced monitoring and alerting with Datadog.',
+        'Developed internal tools that automated critical government compliance tasks, saving an estimated 20+ hours of manual work per week.',
+        'Architected and built high-performance GraphQL dashboards with fuzzy search and virtualization to render and manage massive JSON datasets efficiently.',
+        'Engineered a real-time data synchronization pipeline between MongoDB and Elasticsearch using an event-driven Change Data Capture (CDC) architecture.'
       ]
     },
     {
@@ -112,10 +118,8 @@
       location: 'Paris',
       period: 'Apr — Oct 2017',
       details: [
-        'Worked on a chatbot capable of generating websites according to customer needs',
-        'Identified and fixed critical bugs using Chrome DevTools',
-        'Gained valuable experience in team collaboration using agile methods',
-        'Deepened understanding of server-side vs client-side rendering'
+        'Built a conversational AI chatbot that generated custom websites based on user input.',
+        'Collaborated within an agile team to ship features and iterate on the core product.'
       ]
     },
     {
@@ -124,9 +128,8 @@
       location: 'Osaka',
       period: 'May — Sep 2016',
       details: [
-        'Implemented a BaaS server allowing multi-account management',
-        'Built hybrid mobile app utilizing smartphone hardware capabilities',
-        'Integrated GPS, NFC, and vibration features for enhanced user experience'
+        'Implemented a BaaS server to enable secure multi-account management for a hybrid mobile application.',
+        'Built a cross-platform mobile app utilizing smartphone hardware capabilities, including GPS, NFC, and haptic feedback.'
       ]
     }
   ];
@@ -228,17 +231,39 @@
               {#each experience as exp}
                 <div class="print:break-inside-avoid">
                   <div class="mb-3 print:mb-2">
-                    <h3
-                      class="text-sm font-semibold text-gray-900 mb-1 flex flex-wrap items-center gap-1.5 print:text-xs"
-                    >
-                      <span class="font-normal">{exp.title}</span>
-                      <span class="text-gray-400 font-normal">·</span>
-                      <span class="font-medium">{exp.company}</span>
-                      <span class="text-gray-400 font-normal">·</span>
-                      <span class="font-normal">{exp.location}</span>
-                      <span class="text-gray-400 font-normal">·</span>
-                      <span class="text-slate-400 font-normal">{exp.period}</span>
-                    </h3>
+                    {#if exp.positions}
+                      <!-- Multiple positions at same company -->
+                      <h3
+                        class="text-sm font-semibold text-gray-900 mb-1 flex flex-wrap items-center gap-1.5 print:text-xs"
+                      >
+                        <span class="font-normal">{exp.positions[0].title}</span>
+                        <span class="text-gray-400 font-normal">·</span>
+                        <span class="font-medium">{exp.company}</span>
+                        <span class="text-gray-400 font-normal">·</span>
+                        <span class="font-normal">{exp.location}</span>
+                        <span class="text-gray-400 font-normal">·</span>
+                        <span class="text-slate-400 font-normal">{exp.positions[0].period}</span>
+                      </h3>
+                      {#each exp.positions.slice(1) as position}
+                        <div class="text-sm text-gray-700 print:text-xs">
+                          <span class="font-normal">{position.title}</span>
+                          <span class="text-slate-400 font-normal ml-2">{position.period}</span>
+                        </div>
+                      {/each}
+                    {:else}
+                      <!-- Single position -->
+                      <h3
+                        class="text-sm font-semibold text-gray-900 mb-1 flex flex-wrap items-center gap-1.5 print:text-xs"
+                      >
+                        <span class="font-normal">{exp.title}</span>
+                        <span class="text-gray-400 font-normal">·</span>
+                        <span class="font-medium">{exp.company}</span>
+                        <span class="text-gray-400 font-normal">·</span>
+                        <span class="font-normal">{exp.location}</span>
+                        <span class="text-gray-400 font-normal">·</span>
+                        <span class="text-slate-400 font-normal">{exp.period}</span>
+                      </h3>
+                    {/if}
                   </div>
                   <ul class="space-y-1 text-sm text-gray-600 print:text-xs print:space-y-0.5">
                     {#each exp.details as detail}
