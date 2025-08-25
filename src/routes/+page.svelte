@@ -41,6 +41,8 @@
     'Git',
     'Motion',
     'Next.js',
+    'Tanstack',
+    'Convex'
   ];
 
   const projects = [
