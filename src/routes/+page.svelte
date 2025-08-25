@@ -83,6 +83,7 @@
     {
       title: 'Senior Backend Software Engineer',
       company: 'Cryptio',
+      companyUrl: 'https://cryptio.co/',
       location: 'Paris',
       period: 'April — July 2023',
       details: [
@@ -92,6 +93,7 @@
     },
     {
       company: 'PayFit',
+      companyUrl: 'https://payfit.com/',
       location: 'Paris',
       positions: [
         {
@@ -125,6 +127,7 @@
     {
       title: 'Mobile Application Developer',
       company: 'Export Japan',
+      companyUrl: 'https://www.export-japan.co.jp/',
       location: 'Osaka',
       period: 'May — Sep 2016',
       details: [
@@ -238,7 +241,11 @@
                       >
                         <span class="font-normal">{exp.positions[0].title}</span>
                         <span class="text-gray-400 font-normal">·</span>
-                        <span class="font-medium">{exp.company}</span>
+                        {#if exp.companyUrl}
+                          <a href={exp.companyUrl} target="_blank" class="font-medium text-gray-900 hover:text-sky-600 no-underline">{exp.company}</a>
+                        {:else}
+                          <span class="font-medium">{exp.company}</span>
+                        {/if}
                         <span class="text-gray-400 font-normal">·</span>
                         <span class="font-normal">{exp.location}</span>
                         <span class="text-gray-400 font-normal">·</span>
@@ -257,7 +264,11 @@
                       >
                         <span class="font-normal">{exp.title}</span>
                         <span class="text-gray-400 font-normal">·</span>
-                        <span class="font-medium">{exp.company}</span>
+                        {#if exp.companyUrl}
+                          <a href={exp.companyUrl} target="_blank" class="font-medium text-gray-900 hover:text-sky-600 no-underline">{exp.company}</a>
+                        {:else}
+                          <span class="font-medium">{exp.company}</span>
+                        {/if}
                         <span class="text-gray-400 font-normal">·</span>
                         <span class="font-normal">{exp.location}</span>
                         <span class="text-gray-400 font-normal">·</span>
