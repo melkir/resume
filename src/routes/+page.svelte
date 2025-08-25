@@ -161,7 +161,6 @@
     { language: 'English', level: 'Fluent' },
     { language: 'Japanese', level: 'Conversational' }
   ];
-
 </script>
 
 <!-- Print optimized resume with proper two-column layout -->
@@ -176,7 +175,7 @@
           <div class="col-span-2 flex items-center gap-6 print:gap-4">
             <div class="flex-shrink-0">
               <img
-                src="/avatar.jpg"
+                src="avatar.jpg"
                 alt="Thibault Vieux"
                 class="w-32 h-32 rounded-lg object-cover shadow-md print:w-24 print:h-24 print:shadow-sm"
               />
@@ -234,7 +233,12 @@
                         <span class="font-normal">{exp.positions[0].title}</span>
                         <span class="text-gray-400 font-normal">·</span>
                         {#if exp.companyUrl}
-                          <a href={exp.companyUrl} target="_blank" class="font-medium text-gray-900 hover:text-sky-600 no-underline">{exp.company}</a>
+                          <a
+                            href={exp.companyUrl}
+                            target="_blank"
+                            class="font-medium text-gray-900 hover:text-sky-600 no-underline"
+                            >{exp.company}</a
+                          >
                         {:else}
                           <span class="font-medium">{exp.company}</span>
                         {/if}
@@ -257,7 +261,12 @@
                         <span class="font-normal">{exp.title}</span>
                         <span class="text-gray-400 font-normal">·</span>
                         {#if exp.companyUrl}
-                          <a href={exp.companyUrl} target="_blank" class="font-medium text-gray-900 hover:text-sky-600 no-underline">{exp.company}</a>
+                          <a
+                            href={exp.companyUrl}
+                            target="_blank"
+                            class="font-medium text-gray-900 hover:text-sky-600 no-underline"
+                            >{exp.company}</a
+                          >
                         {:else}
                           <span class="font-medium">{exp.company}</span>
                         {/if}
@@ -296,9 +305,7 @@
                 <h3 class="text-xs font-semibold text-gray-900 mb-1 print:text-[10px]">
                   Programming Languages
                 </h3>
-                <p
-                  class="text-sm text-gray-600 leading-relaxed print:text-xs print:leading-tight"
-                >
+                <p class="text-sm text-gray-600 leading-relaxed print:text-xs print:leading-tight">
                   {skills.languages.join(', ')}
                 </p>
               </div>
@@ -306,9 +313,7 @@
                 <h3 class="text-xs font-semibold text-gray-900 mb-1 print:text-[10px]">
                   Libraries & Frameworks
                 </h3>
-                <p
-                  class="text-sm text-gray-600 leading-relaxed print:text-xs print:leading-tight"
-                >
+                <p class="text-sm text-gray-600 leading-relaxed print:text-xs print:leading-tight">
                   {skills.frameworks.join(', ')}
                 </p>
               </div>
@@ -316,9 +321,7 @@
                 <h3 class="text-xs font-semibold text-gray-900 mb-1 print:text-[10px]">
                   Tools & Platforms
                 </h3>
-                <p
-                  class="text-sm text-gray-600 leading-relaxed print:text-xs print:leading-tight"
-                >
+                <p class="text-sm text-gray-600 leading-relaxed print:text-xs print:leading-tight">
                   {skills.tools.join(', ')}
                 </p>
               </div>
@@ -391,7 +394,6 @@
               {/each}
             </div>
           </section>
-
         </aside>
       </div>
     </div>
