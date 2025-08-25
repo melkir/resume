@@ -38,7 +38,9 @@
     'Docker',
     'GraphQL',
     'Kubernetes',
-    'Git'
+    'Git',
+    'Motion',
+    'Next.js',
   ];
 
   const projects = [
