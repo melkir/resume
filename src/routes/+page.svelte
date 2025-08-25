@@ -83,7 +83,7 @@
       type: 'Full-time',
       duration: '5 yrs',
       description:
-        'Developed internal tools automating government tasks and client data management. Built dashboards, implemented fuzzy search with virtualization for large datasets, and created event-driven CDC for real-time MongoDB-ElasticSearch sync. Transitioned to DevOps to streamline deployments, manage Kubernetes clusters, and implement infrastructure as code. Focused on improving scalability and monitoring services across the platform.',
+        'Developed internal tools automating government tasks and client data management. Built dashboards, implemented fuzzy search with virtualization for large datasets, and created event-driven CDC for real-time MongoDB-ElasticSearch sync. Transitioned to DevOps to streamline deployments, manage Kubernetes clusters, and implement infrastructure as code. Focused on improving scalability and monitoring services across the platform. Contributed to reducing system downtime and enhancing overall platform reliability. Mentored junior developers and participated in technical architecture decisions.',
       logo: PayfitLogo
     },
     {
