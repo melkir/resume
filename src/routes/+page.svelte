@@ -3,6 +3,7 @@
   import CryptioLogo from '../components/icons/Cryptio.svelte';
   import EducationIcon from '../components/icons/Education.svelte';
   import ExportJapanLogo from '../components/icons/ExportJapan.svelte';
+  import FreelancerLogo from '../components/icons/Freelancer.svelte';
   import HeekLogo from '../components/icons/Heek.svelte';
   import JobIcon from '../components/icons/Job.svelte';
   import MapIcon from '../components/icons/Map.svelte';
@@ -48,6 +49,17 @@
   ];
 
   const experience = [
+    {
+      title: 'Technical Consultant',
+      company: 'Freelance',
+      location: 'Remote',
+      date: 'Sept 2024 – Present',
+      type: 'Freelance',
+      duration: '1 year',
+      description:
+        'Founded a technical consulting startup providing architectural guidance and system design services to early-stage companies. Designed automated compliance and reporting systems for EarlyWaters, optimizing regulatory workflows and data management. Guided Homii in building their map-based AI agent for travelers, focusing on technical architecture decisions and scalable system design. Specialized in helping startups navigate critical early-stage technology choices and establish robust development practices.',
+      logo: FreelancerLogo
+    },
     {
       title: 'Senior Software Engineer',
       company: 'Cryptio',
