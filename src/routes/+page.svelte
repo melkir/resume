@@ -46,7 +46,7 @@
   ];
 
   const projects = [
-    { href: 'https://github.com/melkir/next-remote-gpio', name: 'Remote GPIO' },
+    { href: 'https://github.com/melkir/remote-gpio', name: 'Remote GPIO' },
     { href: 'https://github.com/melkir/hacking-workshop', name: 'Pentest Workshop' },
     { href: 'https://github.com/melkir/android-sms-push', name: 'SMS Push' },
     { href: 'https://github.com/melkir/API-Libraries-Demo', name: 'API Libraries Demo' }
