@@ -76,8 +76,8 @@
       period: 'Sept 2024 — Present',
       details: [
         'Operate as an independent consultant providing expert solutions in technical architecture, system design, and full-stack development.',
-        'Contributed to the development of an automated compliance system at EarlyWaters, utilizing confidential computing to enable verifiable reporting for tokenized Real World Assets (RWAs).',
-        'Collaborated on a proof-of-concept for a map-based AI agent, which leveraged a RAG/MCP framework to provide travelers with contextual recommendations and connections to locals.'
+        'Developed an automated compliance system at EarlyWaters, utilizing confidential computing for tokenized RWA reporting.',
+        'Built a proof-of-concept map-based AI agent leveraging RAG/MCP framework for traveler recommendations.'
       ]
     },
     {
@@ -87,8 +87,8 @@
       location: 'Paris',
       period: 'April — July 2023',
       details: [
-        'Led a backend team in transforming complex digital asset data into auditable financial records, architecting the solution with NestJS, React and TypeScript.',
-        'Optimized PostgreSQL database performance for high-volume crypto accounting, reducing query latency and improving data ingestion speeds.'
+        'Led backend team in transforming digital asset data into auditable financial records using NestJS, React and TypeScript.',
+        'Optimized PostgreSQL database performance for high-volume crypto accounting, reducing query latency.'
       ]
     },
     {
@@ -106,12 +106,12 @@
         }
       ],
       details: [
-        'Managed and scaled Kubernetes clusters, enhancing platform reliability and automating CI/CD pipelines for seamless deployments.',
-        'Implemented Infrastructure as Code (IaC) using Terraform, which automated environment provisioning and reduced manual configuration time by over 80%.',
-        'Improved system observability and reduced critical incident response time by leveraging advanced monitoring and alerting with Datadog.',
-        'Developed internal tools that automated critical government compliance tasks, saving an estimated 20+ hours of manual work per week.',
-        'Architected and built high-performance GraphQL dashboards with fuzzy search and virtualization to render and manage massive JSON datasets efficiently.',
-        'Engineered a real-time data synchronization pipeline between MongoDB and Elasticsearch using an event-driven Change Data Capture (CDC) architecture.'
+        'Managed and scaled Kubernetes clusters, enhancing platform reliability and automating CI/CD pipelines.',
+        'Implemented Infrastructure as Code (IaC) using Terraform, automating environment provisioning and reducing manual work by 80%.',
+        'Improved system observability and reduced incident response time using Datadog monitoring.',
+        'Developed internal tools that automated critical government compliance tasks, saving 20+ hours per week.',
+        'Architected high-performance GraphQL dashboards with fuzzy search for managing massive JSON datasets.',
+        'Engineered real-time data synchronization pipeline between MongoDB and Elasticsearch using event-driven CDC architecture.'
       ]
     },
     {
@@ -121,7 +121,7 @@
       period: 'Apr — Oct 2017',
       details: [
         'Built a conversational AI chatbot that generated custom websites based on user input.',
-        'Collaborated within an agile team to ship features and iterate on the core product.'
+        'Collaborated within an agile team to ship features and iterate on the product.'
       ]
     },
     {
@@ -132,7 +132,7 @@
       period: 'May — Sep 2016',
       details: [
         'Implemented a BaaS server to enable secure multi-account management for a hybrid mobile application.',
-        'Built a cross-platform mobile app utilizing smartphone hardware capabilities, including GPS, NFC, and haptic feedback.'
+        'Built a cross-platform mobile app utilizing smartphone capabilities including GPS, NFC, and haptic feedback.'
       ]
     }
   ];
@@ -162,14 +162,6 @@
     { language: 'Japanese', level: 'Conversational' }
   ];
 
-  const interests = [
-    'Home automation',
-    'snowboarding',
-    'video games',
-    'language exchange',
-    'anime',
-    'gym'
-  ];
 </script>
 
 <!-- Print optimized resume with proper two-column layout -->
@@ -186,14 +178,14 @@
               <img
                 src="/avatar.jpg"
                 alt="Thibault Vieux"
-                class="w-24 h-24 rounded-lg object-cover shadow-md print:w-20 print:h-20 print:shadow-sm"
+                class="w-32 h-32 rounded-lg object-cover shadow-md print:w-24 print:h-24 print:shadow-sm"
               />
             </div>
             <div class="flex-1">
-              <h1 class="text-4xl font-bold text-sky-600 mb-2 print:text-3xl print:mb-1">
+              <h1 class="text-6xl font-bold text-sky-600 mb-2 print:text-4xl print:mb-1">
                 Thibault Vieux
               </h1>
-              <p class="text-lg text-gray-600 print:text-sm">
+              <p class="text-base text-gray-600 print:text-sm">
                 Experienced software engineer with a focus on building scalable systems and
                 technical architecture
               </p>
@@ -305,7 +297,7 @@
                   Programming Languages
                 </h3>
                 <p
-                  class="text-xs text-gray-600 leading-relaxed print:text-[9px] print:leading-tight"
+                  class="text-sm text-gray-600 leading-relaxed print:text-xs print:leading-tight"
                 >
                   {skills.languages.join(', ')}
                 </p>
@@ -315,7 +307,7 @@
                   Libraries & Frameworks
                 </h3>
                 <p
-                  class="text-xs text-gray-600 leading-relaxed print:text-[9px] print:leading-tight"
+                  class="text-sm text-gray-600 leading-relaxed print:text-xs print:leading-tight"
                 >
                   {skills.frameworks.join(', ')}
                 </p>
@@ -325,7 +317,7 @@
                   Tools & Platforms
                 </h3>
                 <p
-                  class="text-xs text-gray-600 leading-relaxed print:text-[9px] print:leading-tight"
+                  class="text-sm text-gray-600 leading-relaxed print:text-xs print:leading-tight"
                 >
                   {skills.tools.join(', ')}
                 </p>
@@ -340,7 +332,7 @@
             >
               Languages
             </h2>
-            <p class="text-xs text-gray-600 leading-relaxed print:text-[9px] print:leading-tight">
+            <p class="text-sm text-gray-600 leading-relaxed print:text-xs print:leading-tight">
               {#each languages as lang, i}
                 <span>{lang.language}</span>
                 {lang.level}{#if i < languages.length - 1},&nbsp;{/if}
@@ -364,7 +356,7 @@
                     </a>
                   </h3>
                   <p
-                    class="text-xs text-gray-600 leading-relaxed print:text-[9px] print:leading-tight"
+                    class="text-sm text-gray-600 leading-relaxed print:text-xs print:leading-tight"
                   >
                     {project.description}
                   </p>
@@ -386,12 +378,12 @@
                   <h3 class="text-xs font-semibold text-gray-800 mb-1 print:text-[10px]">
                     {edu.degree}
                   </h3>
-                  <div class="text-xs text-gray-500 mb-1.5 print:text-[9px] print:mb-1">
-                    <div class="font-medium text-gray-700">{edu.school}</div>
-                    <div class="text-gray-500">{edu.concentration} · {edu.period}</div>
+                  <div class="text-sm text-gray-600 mb-1.5 print:text-xs print:mb-1">
+                    <div class="font-medium text-gray-900">{edu.school}</div>
+                    <div class="text-gray-600">{edu.concentration} · {edu.period}</div>
                   </div>
                   <p
-                    class="text-xs text-gray-500 leading-relaxed print:text-[9px] print:leading-tight"
+                    class="text-sm text-gray-600 leading-relaxed print:text-xs print:leading-tight"
                   >
                     {edu.details}
                   </p>
@@ -400,17 +392,6 @@
             </div>
           </section>
 
-          <!-- Interests -->
-          <section class="print:break-inside-avoid">
-            <h2
-              class="text-sm font-semibold text-sky-600 uppercase tracking-wider mb-3 print:mb-2 print:text-xs"
-            >
-              Interests
-            </h2>
-            <p class="text-xs text-gray-600 leading-relaxed print:text-[9px] print:leading-tight">
-              {interests.join(', ')}
-            </p>
-          </section>
         </aside>
       </div>
     </div>
