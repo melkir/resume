@@ -1,21 +1,25 @@
 import adapter from '@sveltejs/adapter-static';
-import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+import { relative, sep } from 'node:path';
 
 const dev = process.argv.includes('dev');
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-  kit: {
-    // adapter-auto only supports some environments, see https://kit.svelte.dev/docs/adapter-auto for a list.
-    // If your environment is not supported or you settled on a specific environment, switch out the adapter.
-    // See https://kit.svelte.dev/docs/adapters for more information about adapters.
-    adapter: adapter(),
-    paths: {
-      base: dev ? '' : process.env.BASE_PATH
-    }
-  },
+	compilerOptions: {
+		runes: ({ filename }) => {
+			const relativePath = relative(import.meta.dirname, filename);
+			const pathSegments = relativePath.toLowerCase().split(sep);
+			const isExternalLibrary = pathSegments.includes('node_modules');
 
-  preprocess: [vitePreprocess({})]
+			return isExternalLibrary ? undefined : true;
+		}
+	},
+	kit: {
+		adapter: adapter(),
+		paths: {
+			base: dev ? '' : process.env.BASE_PATH
+		}
+	}
 };
 
 export default config;

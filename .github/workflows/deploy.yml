@@ -11,26 +11,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # If you're using pnpm, add this step then change the commands and cache key below to use `pnpm`
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
+      - name: Install Bun
+        uses: oven-sh/setup-bun@v2
         with:
-          version: 8
-
-      - name: Install Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 18
-          cache: pnpm
+          bun-version: latest
 
       - name: Install dependencies
-        run: pnpm install
+        run: bun install --frozen-lockfile
 
       - name: build
         env:
           BASE_PATH: '/your-repo-name'
         run: |
-          pnpm run build
+          bun run build
           touch build/.nojekyll
 
       - name: Upload Artifacts
