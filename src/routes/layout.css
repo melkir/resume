@@ -2,45 +2,45 @@
 
 /* Print-specific optimizations */
 @media print {
-	* {
-		-webkit-print-color-adjust: exact !important;
-		print-color-adjust: exact !important;
-	}
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
 
-	@page {
-		size: A4;
-		margin: 0.5in;
-		/* Remove headers and footers */
-		@top-left {
-			content: none;
-		}
-		@top-center {
-			content: none;
-		}
-		@top-right {
-			content: none;
-		}
-		@bottom-left {
-			content: none;
-		}
-		@bottom-center {
-			content: none;
-		}
-		@bottom-right {
-			content: none;
-		}
-	}
+  @page {
+    size: A4;
+    margin: 0.5in;
+    /* Remove headers and footers */
+    @top-left {
+      content: none;
+    }
+    @top-center {
+      content: none;
+    }
+    @top-right {
+      content: none;
+    }
+    @bottom-left {
+      content: none;
+    }
+    @bottom-center {
+      content: none;
+    }
+    @bottom-right {
+      content: none;
+    }
+  }
 
-	/* Ensure proper page breaks */
-	.print\:break-inside-avoid {
-		page-break-inside: avoid;
-		break-inside: avoid;
-	}
+  /* Ensure proper page breaks */
+  .print\:break-inside-avoid {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
 
-	/* Hide any potential header/footer elements */
-	header[role='banner'],
-	footer[role='contentinfo'],
-	.no-print {
-		display: none !important;
-	}
+  /* Hide any potential header/footer elements */
+  header[role='banner'],
+  footer[role='contentinfo'],
+  .no-print {
+    display: none !important;
+  }
 }
