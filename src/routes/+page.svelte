@@ -51,6 +51,12 @@
 
   const projects = [
     {
+      name: 'Guest House Osaka',
+      description:
+        'Static guesthouse website with localized content, optimized media, and a lightweight inquiry flow',
+      url: 'https://guesthouseosaka.com/'
+    },
+    {
       name: 'Remote GPIO',
       description:
         'Rust-based GPIO control system for remote hardware management with web interface',
@@ -61,11 +67,6 @@
       description:
         'Educational penetration testing workshop materials and comprehensive security tools',
       url: 'https://github.com/melkir/hacking-workshop'
-    },
-    {
-      name: 'SMS Push',
-      description: 'Android SMS forwarding system for remote message management and notifications',
-      url: 'https://github.com/melkir/android-sms-push'
     }
   ];
   const experience = [
@@ -76,7 +77,7 @@
       period: 'Sept 2024 — Present',
       details: [
         'Operate as an independent consultant providing expert solutions in technical architecture, system design, and full-stack development.',
-        'Developed an automated compliance system at EarlyWaters, utilizing confidential computing for tokenized RWA reporting.',
+        "Rebuilt Guest House Osaka's website to improve search visibility and turn visits into direct email inquiries.",
         'Built a proof-of-concept map-based AI agent leveraging RAG/MCP framework for traveler recommendations.'
       ]
     },
@@ -245,12 +246,12 @@
                         <span class="font-normal text-gray-400">·</span>
                         <span class="font-normal">{exp.location}</span>
                         <span class="font-normal text-gray-400">·</span>
-                        <span class="font-normal text-slate-400">{exp.positions[0].period}</span>
+                        <span class="font-normal text-slate-500">{exp.positions[0].period}</span>
                       </h3>
                       {#each exp.positions.slice(1) as position (`${exp.company}-${position.title}`)}
                         <div class="text-sm text-gray-700 print:text-xs">
                           <span class="font-normal">{position.title}</span>
-                          <span class="ml-2 font-normal text-slate-400">{position.period}</span>
+                          <span class="ml-2 font-normal text-slate-500">{position.period}</span>
                         </div>
                       {/each}
                     {:else}
@@ -273,7 +274,7 @@
                         <span class="font-normal text-gray-400">·</span>
                         <span class="font-normal">{exp.location}</span>
                         <span class="font-normal text-gray-400">·</span>
-                        <span class="font-normal text-slate-400">{exp.period}</span>
+                        <span class="font-normal text-slate-500">{exp.period}</span>
                       </h3>
                     {/if}
                   </div>
@@ -354,9 +355,13 @@
               {#each projects as project (project.name)}
                 <div class="print:break-inside-avoid">
                   <h3 class="mb-1 text-xs font-semibold print:text-[10px]">
-                    <a href={project.url} target="_blank" class="text-medium no-underline">
-                      {project.name}
-                    </a>
+                    {#if project.url}
+                      <a href={project.url} target="_blank" class="text-medium no-underline">
+                        {project.name}
+                      </a>
+                    {:else}
+                      <span class="text-medium">{project.name}</span>
+                    {/if}
                   </h3>
                   <p
                     class="text-sm leading-relaxed text-gray-600 print:text-xs print:leading-tight"
