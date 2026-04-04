@@ -118,6 +118,7 @@
     {
       title: 'Fullstack Developer',
       company: 'Heek',
+      companyUrl: 'https://www.instagram.com/heek_me',
       location: 'Paris',
       period: 'Apr — Oct 2017',
       details: [
@@ -142,6 +143,7 @@
     {
       degree: 'Master in Computer Science',
       school: 'CY Tech',
+      schoolUrl: 'https://www.linkedin.com/school/cy-tech',
       period: '2015 — 2017',
       concentration: 'Smart Systems',
       details:
@@ -150,6 +152,7 @@
     {
       degree: 'Bachelor in Computer Science',
       school: 'Université Paris Cité',
+      schoolUrl: 'https://www.linkedin.com/school/universit%C3%A9-paris-cit%C3%A9',
       period: '2013 — 2015',
       concentration: 'Artificial Intelligence',
       details:
@@ -356,7 +359,11 @@
                 <div class="print:break-inside-avoid">
                   <h3 class="mb-1 text-xs font-semibold print:text-[10px]">
                     {#if project.url}
-                      <a href={project.url} target="_blank" class="text-medium no-underline">
+                      <a
+                        href={project.url}
+                        target="_blank"
+                        class="text-medium text-gray-900 no-underline hover:text-sky-600"
+                      >
                         {project.name}
                       </a>
                     {:else}
@@ -386,8 +393,20 @@
                   <h3 class="mb-1 text-xs font-semibold text-gray-800 print:text-[10px]">
                     {edu.degree}
                   </h3>
-                  <div class="mb-1.5 text-sm text-gray-600 print:mb-1 print:text-xs">
-                    <div class="font-medium text-gray-900">{edu.school}</div>
+                  <div class="mb-1.5 text-xs text-gray-600 print:mb-1 print:text-[10px]">
+                    <div class="font-medium text-gray-900">
+                      {#if edu.schoolUrl}
+                        <a
+                          href={edu.schoolUrl}
+                          target="_blank"
+                          class="text-gray-900 no-underline hover:text-sky-600"
+                        >
+                          {edu.school}
+                        </a>
+                      {:else}
+                        {edu.school}
+                      {/if}
+                    </div>
                     <div class="text-gray-600">{edu.concentration} · {edu.period}</div>
                   </div>
                   <p
