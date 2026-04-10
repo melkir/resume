@@ -177,7 +177,7 @@
       <header class="mb-8 print:mb-6">
         <div class="grid grid-cols-3 items-center gap-6 print:gap-4">
           <div class="col-span-2 flex items-center gap-6 print:gap-4">
-            <div class="flex-shrink-0">
+            <div class="shrink-0">
               <img
                 src="avatar.jpg"
                 alt="Thibault Vieux"
@@ -284,7 +284,7 @@
                   <ul class="space-y-1 text-sm text-gray-600 print:space-y-0.5 print:text-xs">
                     {#each exp.details as detail (detail)}
                       <li class="flex items-start">
-                        <span class="mr-2 flex-shrink-0 font-bold text-sky-600">•</span>
+                        <span class="mr-2 shrink-0 font-bold text-sky-600">•</span>
                         <span class="leading-relaxed print:leading-normal">{detail}</span>
                       </li>
                     {/each}
