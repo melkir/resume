@@ -1,14 +1,18 @@
 <script>
   const contact = [
-    { icon: 'bx bx-envelope', label: 'melkir13@gmail.com', href: 'mailto:melkir13@gmail.com' },
-    { icon: 'bx bx-globe', label: 'thibaultvieux.com', href: 'https://thibaultvieux.com/' },
-    { icon: 'bx bxl-github', label: 'github.com/melkir', href: 'https://github.com/melkir' },
     {
-      icon: 'bx bxl-linkedin',
-      label: 'linkedin.com/in/thibault-vieux',
+      type: 'Email',
+      value: 'melkir13@gmail.com',
+      href: 'mailto:melkir13@gmail.com'
+    },
+    { type: 'Web', value: 'thibaultvieux.com', href: 'https://thibaultvieux.com/' },
+    { type: 'GitHub', value: 'github.com/melkir', href: 'https://github.com/melkir' },
+    {
+      type: 'LinkedIn',
+      value: 'linkedin.com/in/thibault-vieux',
       href: 'https://www.linkedin.com/in/thibault-vieux'
     },
-    { icon: 'bx bx-map', label: 'Japan', href: null }
+    { type: 'Location', value: 'Japan', href: null }
   ];
 
   const skills = {
@@ -37,7 +41,7 @@
       'Git',
       'GitHub',
       'Linear',
-      'ElasticSearch',
+      'Elasticsearch',
       'Docker',
       'Kubernetes',
       'Terraform',
@@ -167,25 +171,45 @@
   ];
 </script>
 
-<!-- Print optimized resume with proper two-column layout -->
+<svelte:head>
+  <title>Thibault Vieux — Software Engineer</title>
+  <meta
+    name="description"
+    content="Résumé of Thibault Vieux, a software engineer specializing in scalable systems, technical architecture, and full-stack development."
+  />
+  <meta property="og:title" content="Thibault Vieux — Software Engineer" />
+  <meta
+    property="og:description"
+    content="Software engineer specializing in scalable systems, technical architecture, and full-stack development."
+  />
+  <meta property="og:type" content="profile" />
+</svelte:head>
+
 <div class="min-h-screen bg-gray-50 px-4 py-8 print:m-0 print:bg-white print:p-0">
   <div
     class="mx-auto max-w-5xl rounded-lg bg-white shadow-lg print:max-w-none print:rounded-none print:shadow-none"
   >
-    <div class="p-12 print:max-h-none print:p-0">
-      <!-- Header -->
+    <div class="p-6 sm:p-8 lg:p-12 print:max-h-none print:p-0">
       <header class="mb-8 print:mb-6">
-        <div class="grid grid-cols-3 items-center gap-6 print:gap-4">
-          <div class="col-span-2 flex items-center gap-6 print:gap-4">
+        <div
+          class="grid grid-cols-1 items-center gap-6 sm:grid-cols-3 print:grid-cols-3 print:gap-4"
+        >
+          <div
+            class="flex min-w-0 items-center gap-4 sm:col-span-2 sm:gap-6 print:col-span-2 print:gap-4"
+          >
             <div class="shrink-0">
               <img
                 src="avatar.jpg"
-                alt="Thibault Vieux"
-                class="h-32 w-32 rounded-lg object-cover shadow-md print:h-24 print:w-24 print:shadow-sm"
+                alt=""
+                width="128"
+                height="128"
+                class="h-24 w-24 rounded-lg object-cover shadow-md sm:h-28 sm:w-28 lg:h-32 lg:w-32 print:h-24 print:w-24 print:shadow-sm"
               />
             </div>
-            <div class="flex-1">
-              <h1 class="mb-2 text-6xl font-bold text-sky-600 print:mb-1 print:text-4xl">
+            <div class="min-w-0 flex-1">
+              <h1
+                class="mb-2 text-4xl leading-none font-bold text-sky-600 sm:text-5xl lg:text-6xl print:mb-1 print:text-4xl"
+              >
                 Thibault Vieux
               </h1>
               <p class="text-base text-gray-600 print:text-sm">
@@ -194,22 +218,29 @@
               </p>
             </div>
           </div>
-          <div class="col-span-1">
-            <div class="space-y-2 text-xs text-gray-600 print:space-y-1.5 print:text-[10px]">
-              {#each contact as item (item.label)}
+          <div class="sm:col-span-1">
+            <address
+              class="space-y-2 text-xs text-gray-600 not-italic print:space-y-1.5 print:text-[10px]"
+            >
+              {#each contact as item (item.type)}
                 {#if item.href}
-                  <a href={item.href} class="flex items-center hover:text-sky-600" target="_blank">
-                    <i class="{item.icon} mr-2 flex w-4 justify-center text-sm print:text-xs"></i>
-                    <span class="break-all">{item.label}</span>
+                  <a href={item.href} class="group flex items-baseline gap-2 hover:text-sky-600">
+                    <span
+                      class="w-12 shrink-0 font-semibold text-sky-700 group-hover:text-sky-600 print:w-10"
+                      >{item.type}</span
+                    >
+                    <span class="min-w-0 break-all">{item.value}</span>
                   </a>
                 {:else}
-                  <div class="flex items-center">
-                    <i class="{item.icon} mr-2 flex w-4 justify-center text-sm print:text-xs"></i>
-                    <span>{item.label}</span>
+                  <div class="flex items-baseline gap-2">
+                    <span class="w-12 shrink-0 font-semibold text-sky-700 print:w-10"
+                      >{item.type}</span
+                    >
+                    <span>{item.value}</span>
                   </div>
                 {/if}
               {/each}
-            </div>
+            </address>
           </div>
         </div>
       </header>
@@ -221,9 +252,9 @@
           <!-- Experience -->
           <section class="print:break-inside-avoid">
             <h2
-              class="mb-4 text-sm font-semibold tracking-wider text-sky-600 uppercase print:mb-3 print:text-xs"
+              class="mb-4 text-sm font-semibold tracking-wider text-sky-700 uppercase print:mb-3 print:text-xs"
             >
-              Revelent Experience
+              Relevant Experience
             </h2>
             <div class="space-y-6 print:space-y-4">
               {#each experience as exp (exp.company)}
@@ -239,7 +270,6 @@
                         {#if exp.companyUrl}
                           <a
                             href={exp.companyUrl}
-                            target="_blank"
                             class="font-medium text-gray-900 no-underline hover:text-sky-600"
                             >{exp.company}</a
                           >
@@ -267,7 +297,6 @@
                         {#if exp.companyUrl}
                           <a
                             href={exp.companyUrl}
-                            target="_blank"
                             class="font-medium text-gray-900 no-underline hover:text-sky-600"
                             >{exp.company}</a
                           >
@@ -284,7 +313,9 @@
                   <ul class="space-y-1 text-sm text-gray-600 print:space-y-0.5 print:text-xs">
                     {#each exp.details as detail (detail)}
                       <li class="flex items-start">
-                        <span class="mr-2 shrink-0 font-bold text-sky-600">•</span>
+                        <span class="mr-2 shrink-0 font-bold text-sky-600" aria-hidden="true"
+                          >•</span
+                        >
                         <span class="leading-relaxed print:leading-normal">{detail}</span>
                       </li>
                     {/each}
@@ -300,7 +331,7 @@
           <!-- Skills -->
           <section class="print:break-inside-avoid">
             <h2
-              class="mb-3 text-sm font-semibold tracking-wider text-sky-600 uppercase print:mb-2 print:text-xs"
+              class="mb-3 text-sm font-semibold tracking-wider text-sky-700 uppercase print:mb-2 print:text-xs"
             >
               Skills
             </h2>
@@ -335,22 +366,24 @@
           <!-- Languages -->
           <section class="print:break-inside-avoid">
             <h2
-              class="mb-3 text-sm font-semibold tracking-wider text-sky-600 uppercase print:mb-2 print:text-xs"
+              class="mb-3 text-sm font-semibold tracking-wider text-sky-700 uppercase print:mb-2 print:text-xs"
             >
               Languages
             </h2>
-            <p class="text-sm leading-relaxed text-gray-600 print:text-xs print:leading-tight">
-              {#each languages as lang, i (lang.language)}
-                <span>{lang.language}</span>
-                {lang.level}{#if i < languages.length - 1},&nbsp;{/if}
+            <dl class="space-y-1 text-sm text-gray-600 print:text-xs print:leading-tight">
+              {#each languages as lang (lang.language)}
+                <div class="flex justify-between gap-3">
+                  <dt class="font-medium text-gray-700">{lang.language}</dt>
+                  <dd>{lang.level}</dd>
+                </div>
               {/each}
-            </p>
+            </dl>
           </section>
 
           <!-- Projects -->
           <section class="print:break-inside-avoid">
             <h2
-              class="mb-3 text-sm font-semibold tracking-wider text-sky-600 uppercase print:mb-2 print:text-xs"
+              class="mb-3 text-sm font-semibold tracking-wider text-sky-700 uppercase print:mb-2 print:text-xs"
             >
               Selected Projects
             </h2>
@@ -361,13 +394,12 @@
                     {#if project.url}
                       <a
                         href={project.url}
-                        target="_blank"
-                        class="text-medium text-gray-900 no-underline hover:text-sky-600"
+                        class="font-medium text-gray-900 no-underline hover:text-sky-600"
                       >
                         {project.name}
                       </a>
                     {:else}
-                      <span class="text-medium">{project.name}</span>
+                      <span class="font-medium">{project.name}</span>
                     {/if}
                   </h3>
                   <p
@@ -383,7 +415,7 @@
           <!-- Education -->
           <section class="print:break-inside-avoid">
             <h2
-              class="mb-3 text-sm font-semibold tracking-wider text-sky-600 uppercase print:mb-2 print:text-xs"
+              class="mb-3 text-sm font-semibold tracking-wider text-sky-700 uppercase print:mb-2 print:text-xs"
             >
               Education
             </h2>
@@ -398,7 +430,6 @@
                       {#if edu.schoolUrl}
                         <a
                           href={edu.schoolUrl}
-                          target="_blank"
                           class="text-gray-900 no-underline hover:text-sky-600"
                         >
                           {edu.school}
