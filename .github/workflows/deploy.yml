@@ -2,11 +2,20 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: 'main'
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build_site:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - name: Checkout
         uses: actions/checkout@v7
@@ -19,21 +28,26 @@ jobs:
       - name: Install dependencies
         run: bun install --frozen-lockfile
 
-      - name: build
-        env:
-          BASE_PATH: '/your-repo-name'
-        run: |
-          bun run build
-          touch build/.nojekyll
+      - name: Check
+        run: bun run check
 
-      - name: Upload Artifacts
+      - name: Lint
+        run: bun run lint
+
+      - name: Build
+        env:
+          BASE_PATH: /${{ github.event.repository.name }}
+        run: bun run build
+
+      - name: Upload artifact
+        if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v5
         with:
-          # this should match the `pages` option in your adapter-static options
           path: 'build/'
 
   deploy:
     needs: build_site
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
 
     permissions:
