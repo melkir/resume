@@ -1,18 +1,26 @@
 <script>
   const contact = [
     {
-      type: 'Email',
+      icon: 'bx bx-envelope',
       value: 'melkir13@gmail.com',
       href: 'mailto:melkir13@gmail.com'
     },
-    { type: 'Web', value: 'thibaultvieux.com', href: 'https://thibaultvieux.com/' },
-    { type: 'GitHub', value: 'github.com/melkir', href: 'https://github.com/melkir' },
     {
-      type: 'LinkedIn',
+      icon: 'bx bx-globe',
+      value: 'thibaultvieux.com',
+      href: 'https://thibaultvieux.com/'
+    },
+    {
+      icon: 'bx bxl-github',
+      value: 'github.com/melkir',
+      href: 'https://github.com/melkir'
+    },
+    {
+      icon: 'bx bxl-linkedin',
       value: 'linkedin.com/in/thibault-vieux',
       href: 'https://www.linkedin.com/in/thibault-vieux'
     },
-    { type: 'Location', value: 'Japan', href: null }
+    { icon: 'bx bx-map', value: 'Japan', href: null }
   ];
 
   const skills = {
@@ -222,20 +230,26 @@
             <address
               class="space-y-2 text-xs text-gray-600 not-italic print:space-y-1.5 print:text-[10px]"
             >
-              {#each contact as item (item.type)}
+              {#each contact as item (item.value)}
                 {#if item.href}
-                  <a href={item.href} class="group flex items-baseline gap-2 hover:text-sky-600">
-                    <span
-                      class="w-12 shrink-0 font-semibold text-sky-700 group-hover:text-sky-600 print:w-10"
-                      >{item.type}</span
-                    >
+                  <a
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex items-center hover:text-sky-600"
+                  >
+                    <i
+                      class="{item.icon} mr-2 flex w-4 justify-center text-sm print:text-xs"
+                      aria-hidden="true"
+                    ></i>
                     <span class="min-w-0 break-all">{item.value}</span>
                   </a>
                 {:else}
-                  <div class="flex items-baseline gap-2">
-                    <span class="w-12 shrink-0 font-semibold text-sky-700 print:w-10"
-                      >{item.type}</span
-                    >
+                  <div class="flex items-center">
+                    <i
+                      class="{item.icon} mr-2 flex w-4 justify-center text-sm print:text-xs"
+                      aria-hidden="true"
+                    ></i>
                     <span>{item.value}</span>
                   </div>
                 {/if}
@@ -252,7 +266,7 @@
           <!-- Experience -->
           <section class="print:break-inside-avoid">
             <h2
-              class="mb-4 text-sm font-semibold tracking-wider text-sky-700 uppercase print:mb-3 print:text-xs"
+              class="mb-4 text-sm font-semibold tracking-wider text-sky-600 uppercase print:mb-3 print:text-xs"
             >
               Relevant Experience
             </h2>
@@ -270,6 +284,8 @@
                         {#if exp.companyUrl}
                           <a
                             href={exp.companyUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             class="font-medium text-gray-900 no-underline hover:text-sky-600"
                             >{exp.company}</a
                           >
@@ -297,6 +313,8 @@
                         {#if exp.companyUrl}
                           <a
                             href={exp.companyUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             class="font-medium text-gray-900 no-underline hover:text-sky-600"
                             >{exp.company}</a
                           >
@@ -331,7 +349,7 @@
           <!-- Skills -->
           <section class="print:break-inside-avoid">
             <h2
-              class="mb-3 text-sm font-semibold tracking-wider text-sky-700 uppercase print:mb-2 print:text-xs"
+              class="mb-3 text-sm font-semibold tracking-wider text-sky-600 uppercase print:mb-2 print:text-xs"
             >
               Skills
             </h2>
@@ -366,7 +384,7 @@
           <!-- Languages -->
           <section class="print:break-inside-avoid">
             <h2
-              class="mb-3 text-sm font-semibold tracking-wider text-sky-700 uppercase print:mb-2 print:text-xs"
+              class="mb-3 text-sm font-semibold tracking-wider text-sky-600 uppercase print:mb-2 print:text-xs"
             >
               Languages
             </h2>
@@ -383,7 +401,7 @@
           <!-- Projects -->
           <section class="print:break-inside-avoid">
             <h2
-              class="mb-3 text-sm font-semibold tracking-wider text-sky-700 uppercase print:mb-2 print:text-xs"
+              class="mb-3 text-sm font-semibold tracking-wider text-sky-600 uppercase print:mb-2 print:text-xs"
             >
               Selected Projects
             </h2>
@@ -394,6 +412,8 @@
                     {#if project.url}
                       <a
                         href={project.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         class="font-medium text-gray-900 no-underline hover:text-sky-600"
                       >
                         {project.name}
@@ -415,7 +435,7 @@
           <!-- Education -->
           <section class="print:break-inside-avoid">
             <h2
-              class="mb-3 text-sm font-semibold tracking-wider text-sky-700 uppercase print:mb-2 print:text-xs"
+              class="mb-3 text-sm font-semibold tracking-wider text-sky-600 uppercase print:mb-2 print:text-xs"
             >
               Education
             </h2>
@@ -430,6 +450,8 @@
                       {#if edu.schoolUrl}
                         <a
                           href={edu.schoolUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           class="text-gray-900 no-underline hover:text-sky-600"
                         >
                           {edu.school}
