@@ -28,6 +28,12 @@
   * {
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
+    box-shadow: none !important;
+    outline: none !important;
+  }
+
+  html {
+    background: var(--color-white);
   }
 
   @page {

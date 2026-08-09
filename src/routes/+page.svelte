@@ -193,7 +193,7 @@
   <meta property="og:type" content="profile" />
 </svelte:head>
 
-<div class="min-h-screen bg-gray-50 px-4 py-8 print:m-0 print:bg-white print:p-0">
+<div class="min-h-screen bg-gray-50 px-4 py-8 print:m-0 print:min-h-0 print:bg-white print:p-0">
   <div
     class="mx-auto max-w-5xl rounded-lg bg-white shadow-lg print:max-w-none print:rounded-none print:shadow-none"
   >
