@@ -29,7 +29,7 @@
     "eslint-plugin-svelte": "^3.23.0",
     "globals": "^17.11.0",
     "oxfmt": "^0.64.0",
-    "oxlint": "~1.79.0",
+    "oxlint": "~1.80.0",
     "svelte": "^5.56.10",
     "svelte-check": "^4.7.6",
     "tailwindcss": "^4.3.3",
