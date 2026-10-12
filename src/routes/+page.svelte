@@ -30,6 +30,7 @@
       'JavaScript (ES2015+)',
       'Rust',
       'Python',
+      'Swift',
       'Dart',
       'SQL',
       'GraphQL',
@@ -65,6 +66,11 @@
 
   const projects = [
     {
+      name: 'Peerflix',
+      description: 'Torrent search and streaming CLI; first version written in Go, now in Rust',
+      url: 'https://github.com/melkir/peerflix'
+    },
+    {
       name: 'Guest House Osaka',
       description:
         'Static guesthouse website with localized content, optimized media, and a lightweight inquiry flow',
@@ -78,8 +84,7 @@
     },
     {
       name: 'Pentest Workshop',
-      description:
-        'Educational penetration testing workshop materials and comprehensive security tools',
+      description: 'Penetration testing workshop materials and security tools',
       url: 'https://github.com/melkir/hacking-workshop'
     }
   ];
