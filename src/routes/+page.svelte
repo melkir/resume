@@ -133,7 +133,7 @@
         'Helm'
       ],
       details: [
-        'Rebuilt the MongoDB to Elasticsearch sync in Go as an event-driven service on MongoDB Change Streams, replacing scheduled polling: search updates became instant, database polling load disappeared, and sync-related downtime stopped.',
+        'Took over a long-stalled project and shipped it in two weeks: rebuilt the MongoDB to Elasticsearch sync in Go as an event-driven service on MongoDB Change Streams, replacing scheduled polling. Search updates became instant, database polling load disappeared, sync-related downtime stopped, and it ran in production until I left.',
         'Owned that service end to end: containerized it, wrote Helm charts to deploy it on Kubernetes, and set up Datadog monitoring for sync lag and failures.',
         'Managed and scaled Kubernetes clusters, enhancing platform reliability and automating CI/CD pipelines.',
         'Implemented Infrastructure as Code (IaC) using Terraform, automating environment provisioning and reducing manual work by 80%.',
@@ -149,8 +149,7 @@
       period: 'Apr — Oct 2017',
       stack: ['TypeScript', 'Angular', 'Node.js'],
       details: [
-        'Built a conversational AI chatbot that generated custom websites based on user input.',
-        'Collaborated within an agile team to ship features and iterate on the product.'
+        'Built a conversational AI chatbot that generated custom websites based on user input.'
       ]
     },
     {
