@@ -2,8 +2,8 @@
   const contact = [
     {
       icon: 'bx bx-envelope',
-      value: 'hello@thibaultvieux.com',
-      href: 'mailto:hello@thibaultvieux.com'
+      value: 'mail@thibaultvieux.com',
+      href: 'mailto:mail@thibaultvieux.com'
     },
     {
       icon: 'bx bx-globe',
