@@ -2,8 +2,8 @@
   const contact = [
     {
       icon: 'bx bx-envelope',
-      value: 'melkir13@gmail.com',
-      href: 'mailto:melkir13@gmail.com'
+      value: 'hello@thibaultvieux.com',
+      href: 'mailto:hello@thibaultvieux.com'
     },
     {
       icon: 'bx bx-globe',
