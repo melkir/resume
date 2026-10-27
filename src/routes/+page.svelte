@@ -25,14 +25,17 @@
 
   const skills = {
     languages: [
-      'JavaScript (ES2015+)',
+      'Go',
       'TypeScript',
-      'HTML',
-      'CSS',
+      'JavaScript (ES2015+)',
       'Rust',
+      'Python',
+      'Swift',
+      'Dart',
       'SQL',
       'GraphQL',
-      'Python'
+      'HTML',
+      'CSS'
     ],
     frameworks: [
       'React',
@@ -52,9 +55,9 @@
       'Elasticsearch',
       'Docker',
       'Kubernetes',
+      'Helm',
       'Terraform',
-      'MongoDB',
-      'Postgres',
+      'Datadog',
       'Vercel',
       'AWS',
       'Figma'
@@ -62,6 +65,11 @@
   };
 
   const projects = [
+    {
+      name: 'Peerflix',
+      description: 'Torrent search and streaming CLI; first version written in Go, now in Rust',
+      url: 'https://github.com/melkir/peerflix'
+    },
     {
       name: 'Guest House Osaka',
       description:
@@ -76,8 +84,7 @@
     },
     {
       name: 'Pentest Workshop',
-      description:
-        'Educational penetration testing workshop materials and comprehensive security tools',
+      description: 'Penetration testing workshop materials and security tools',
       url: 'https://github.com/melkir/hacking-workshop'
     }
   ];
@@ -87,6 +94,7 @@
       company: 'Freelance',
       location: 'Remote',
       period: 'Sept 2024 — Present',
+      stack: ['TypeScript', 'Next.js', 'Convex', 'RAG', 'MCP'],
       details: [
         'Operate as an independent consultant providing expert solutions in technical architecture, system design, and full-stack development.',
         "Rebuilt Guest House Osaka's website to improve search visibility and turn visits into direct email inquiries.",
@@ -99,6 +107,7 @@
       companyUrl: 'https://cryptio.co/',
       location: 'Paris',
       period: 'April — July 2023',
+      stack: ['TypeScript', 'NestJS', 'React', 'PostgreSQL', 'Docker'],
       details: [
         'Led backend team in transforming digital asset data into auditable financial records using NestJS, React and TypeScript.',
         'Optimized PostgreSQL database performance for high-volume crypto accounting, reducing query latency.'
@@ -118,13 +127,23 @@
           period: 'Apr 2018 — Dec 2020'
         }
       ],
+      stack: [
+        'Go',
+        'TypeScript',
+        'React',
+        'GraphQL',
+        'MongoDB',
+        'Elasticsearch',
+        'Kubernetes',
+        'Helm'
+      ],
       details: [
+        'Took over a long-stalled project and shipped it in two weeks: rebuilt the MongoDB to Elasticsearch sync in Go as an event-driven service on MongoDB Change Streams, replacing scheduled polling. Search updates became instant, database polling load disappeared, sync-related downtime stopped, and it ran in production until I left.',
+        'Owned that service end to end: containerized it, wrote Helm charts to deploy it on Kubernetes, and set up Datadog monitoring for sync lag and failures.',
         'Managed and scaled Kubernetes clusters, enhancing platform reliability and automating CI/CD pipelines.',
         'Implemented Infrastructure as Code (IaC) using Terraform, automating environment provisioning and reducing manual work by 80%.',
-        'Improved system observability and reduced incident response time using Datadog monitoring.',
         'Developed internal tools that automated critical government compliance tasks, saving 20+ hours per week.',
-        'Architected high-performance GraphQL dashboards with fuzzy search for managing massive JSON datasets.',
-        'Engineered real-time data synchronization pipeline between MongoDB and Elasticsearch using event-driven CDC architecture.'
+        'Architected high-performance GraphQL dashboards with fuzzy search for managing massive JSON datasets.'
       ]
     },
     {
@@ -133,9 +152,9 @@
       companyUrl: 'https://www.instagram.com/heek_me',
       location: 'Paris',
       period: 'Apr — Oct 2017',
+      stack: ['TypeScript', 'Angular', 'Node.js'],
       details: [
-        'Built a conversational AI chatbot that generated custom websites based on user input.',
-        'Collaborated within an agile team to ship features and iterate on the product.'
+        'Built a conversational AI chatbot that generated custom websites based on user input.'
       ]
     },
     {
@@ -144,6 +163,7 @@
       companyUrl: 'https://www.export-japan.co.jp/',
       location: 'Osaka',
       period: 'May — Sep 2016',
+      stack: ['Dart', 'Flutter', 'Ruby on Rails'],
       details: [
         'Implemented a BaaS server to enable secure multi-account management for a hybrid mobile application.',
         'Built a cross-platform mobile app utilizing smartphone capabilities including GPS, NFC, and haptic feedback.'
@@ -221,8 +241,7 @@
                 Thibault Vieux
               </h1>
               <p class="text-base text-gray-600 print:text-sm">
-                Experienced software engineer with a focus on building scalable systems and
-                technical architecture
+                Software engineer building scalable backend systems in Go and TypeScript
               </p>
             </div>
           </div>
@@ -326,6 +345,17 @@
                         <span class="font-normal text-gray-400">·</span>
                         <span class="font-normal text-slate-500">{exp.period}</span>
                       </h3>
+                    {/if}
+                    {#if exp.stack}
+                      <ul
+                        class="flex flex-wrap items-center gap-x-1.5 text-xs text-slate-500 print:text-[10px]"
+                        aria-label="Tech stack"
+                      >
+                        {#each exp.stack as tech, i (tech)}
+                          {#if i > 0}<li class="text-gray-400" aria-hidden="true">·</li>{/if}
+                          <li class={tech === 'Go' ? 'font-semibold text-sky-700' : ''}>{tech}</li>
+                        {/each}
+                      </ul>
                     {/if}
                   </div>
                   <ul class="space-y-1 text-sm text-gray-600 print:space-y-0.5 print:text-xs">
