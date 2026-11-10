@@ -128,7 +128,7 @@
       ]
     },
     {
-      title: 'Fullstack Developer',
+      title: 'Fullstack Developer (Internship)',
       company: 'Heek',
       companyUrl: 'https://www.instagram.com/heek_me',
       location: 'Paris',
@@ -139,7 +139,7 @@
       ]
     },
     {
-      title: 'Mobile Application Developer',
+      title: 'Mobile Application Developer (Internship)',
       company: 'Export Japan',
       companyUrl: 'https://www.export-japan.co.jp/',
       location: 'Osaka',
